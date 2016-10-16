@@ -9,69 +9,69 @@ var LMI = {
       var spell = $('.spell-list a');
 
       var cantrip = $('.cantrips ul');
-      var levelOne = $('.one ul');
-      var levelTwo = $('.two ul');
-      var levelThree = $('.three ul');
-      var levelFour = $('.four ul');
-      var levelFive = $('.five ul');
-      var levelSix = $('.six ul');
-      var levelSeven = $('.seven ul');
-      var levelEight = $('.eight ul');
-      var levelNine = $('.nine ul');
+      var l1 = $('.one ul');
+      var l2 = $('.two ul');
+      var l3 = $('.three ul');
+      var l4 = $('.four ul');
+      var l5 = $('.five ul');
+      var l6 = $('.six ul');
+      var l7 = $('.seven ul');
+      var l8 = $('.eight ul');
+      var l9 = $('.nine ul');
 
       $.each(spellbook, function() {
 
-        scribe = '<li><a class="' + this.class + '" data-modal="' + this.name + '">' + this.name + '</a></li>';
+        c = this.class;
+        cl = c.toLowerCase().split(',').join('');
+        scribe = '<li><a class="' + cl + '" data-modal="' + this.name + '">' + this.name + '</a></li>';
 
         if (this.level.indexOf("1") >= 0) {
-          levelOne.append(scribe);
+          l1.append(scribe);
         } else if (this.level.indexOf("2") >= 0) {
-          levelTwo.append(scribe);
+          l2.append(scribe);
         } else if (this.level.indexOf("3") >= 0) {
-          levelThree.append(scribe);
+          l3.append(scribe);
         } else if (this.level.indexOf("4") >= 0) {
-          levelFour.append(scribe);
+          l4.append(scribe);
         } else if (this.level.indexOf("5") >= 0) {
-          levelFive.append(scribe);
+          l5.append(scribe);
         } else if (this.level.indexOf("6") >= 0) {
-          levelSix.append(scribe);
+          l6.append(scribe);
         } else if (this.level.indexOf("7") >= 0) {
-          levelSeven.append(scribe);
+          l7.append(scribe);
         } else if (this.level.indexOf("8") >= 0) {
-          levelEight.append(scribe);
+          l8.append(scribe);
         } else if (this.level.indexOf("9") >= 0) {
-          levelNine.append(scribe);
+          l9.append(scribe);
         } else {
           cantrip.append(scribe);
         }
 
-        if (this.concentration === 'yes') {
-          modalContent =
-            '<div class="spell-modal" data-name="' + this.name + '">' +
-            '<div class="modal-header"><h1>' + this.name + '</h1><span>' + this.level + ' ' + this.school + '</span></div>' +
-            '<div class="spell-info">' +
-            '<div class="casting-time"><span>Casting Time:</span>' + this.casting_time + '</div>' +
-            '<div class="range"><span>Range:</span>' + this.range + '</div>' +
-            '<div class="components"><span>Components:</span>' + this.components + '</div>' +
-            '<div class="duration"><span>Duration:</span> Concentration, ' + this.duration + '</div>' +
-            '</div>' +
-            '<div class="spell-desc">' + this.desc + '</div>' +
-            '<button class="modal-close" type="button">Close</button>' +
-            '</div>';
+        modalContent =
+          '<div class="spell-modal" data-name="' + this.name + '">' +
+          '<div class="modal-header"><h1>' + this.name + '</h1><span>';
+        if (this.level !== 'Cantrip') {
+          modalContent += this.level + ' ' + this.school + '</span></div>';
         } else {
-          modalContent =
-            '<div class="spell-modal" data-name="' + this.name + '">' +
-            '<div class="modal-header"><h1>' + this.name + '</h1><span>' + this.level + ' ' + this.school + '</span></div>' +
-            '<div class="spell-info">' +
-            '<div class="casting-time"><span>Casting Time:</span>' + this.casting_time + '</div>' +
-            '<div class="range"><span>Range:</span>' + this.range + '</div>' +
-            '<div class="components"><span>Components:</span>' + this.components + '</div>' +
-            '<div class="duration"><span>Duration:</span>' + this.duration + '</div>' +
-            '</div>' +
-            '<div class="spell-desc">' + this.desc + '</div>' +
-            '<button class="modal-close" type="button">Close</button>' +
-            '</div>';
+          modalContent += this.school + ' ' + this.level + '</span></div>';
         }
+        modalContent += '<div class="spell-info">' +
+          '<div class="casting-time"><span>Casting Time:</span>' + this.casting_time + '</div>' +
+          '<div class="range"><span>Range:</span>' + this.range + '</div>';
+        if (this.material !== undefined) {
+          modalContent += '<div class="components"><span>Components:</span>' + this.components + ' (' + this.material + ')' + '</div>';
+        } else {
+          modalContent += '<div class="components"><span>Components:</span>' + this.components + '</div>';
+        }
+        if (this.concentration !== 'no') {
+          modalContent += '<div class="duration"><span>Duration:</span> Concentration, ' + this.duration + '</div>';
+        } else {
+          modalContent += '<div class="duration"><span>Duration:</span> ' + this.duration + '</div>';
+        }
+        modalContent += '</div>' +
+          '<div class="spell-desc">' + this.desc + '</div>' +
+          '<button class="modal-close" type="button">Close</button>' +
+          '</div>';
 
         $('main').append(modalContent);
 
@@ -89,6 +89,27 @@ var LMI = {
         $(this).closest('.spell-modal').removeClass('active');
       });
 
+
+      $('.class-menu a').click(function() {
+        if (!$(this).hasClass('active')) {
+          cl = '.' + $(this).attr('class');
+          $('.class-menu a').removeClass('active');
+          $('.spell-list li').hide();
+          $('.spell-list a').filter(cl).parent('li').show();
+          $(this).addClass('active');
+          if ($(this).hasClass('ranger') || $(this).hasClass('paladin')) {
+            $('.spell-list .cantrips').hide();
+          } else {
+            $('.spell-list .cantrips').show();
+          }
+        }
+      });
+
+      $('header .all').click(function() {
+        $('.class-menu a').removeClass('active');
+        $('.spell-list .cantrips').show();
+        $('.spell-list li').show();
+      });
 
     }
   }

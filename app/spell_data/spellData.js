@@ -3300,11 +3300,11 @@ var jsonSpellData = [{
     "class": "Bard, Sorcerer, Wizard"
   }, {
     "name": "Legend Lore",
-    "desc": "<p>Name or describe a person, place or object. The fate brings to mind a brief and summary information about the thing you named. Information can be presented as tales of forgotten history or even secret information that have never been revealed. If the thing you named is not legendary resonance, you get no information. More information you already have about the thing, more precise and detailed the information you will receive.</p><p>What you learn is accurate but can be hidden in figurative language. For example, if you have a mysterious magical ax in your hand, the spell can reveal this information: \"Woe to the wicked that affects his hands the ax because the handle decide those of malignant Only a true child of the stone magnet. and loved Moradin could awaken the true power of this ax, and only with the sacred Rudnogg word on the lips.\"</p>",
+    "desc": "<p>Name or describe a person, place or object. The fate brings to mind a brief and summary information about the thing you named. Information can be presented as tales of forgotten history or even secret information that have never been revealed. If the thing you named is not legendary resonance, you get no information. More information you already have about the thing, more precise and detailed the information you will receive.</p><p>What you learn is accurate but can be hidden in figurative language. For example, if you have a mysterious magical axe in your hand, the spell can reveal this information: \"Woe to the evildoer whose hand touches the axe, for even the haft slices the hand of the evil ones. Only a true Child of Stone, lover and beloved of Moradin, may awaken the true powers of the axe, and only with the sacred word Rudnogg on the lips.\"</p>",
     "page": "phb 254",
     "range": "Self",
     "components": "V, S, M",
-    "material": "Incense worth 250 inches that fate consumes and four sticks of ivory worth 50 gp each.",
+    "material": "Incense worth 250gp that fate consumes and four sticks of ivory worth 50 gp each.",
     "ritual": "no",
     "duration": "Instantaneous",
     "concentration": "no",
