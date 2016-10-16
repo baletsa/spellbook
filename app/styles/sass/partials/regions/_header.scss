@@ -1,0 +1,36 @@
+header {
+  padding: 1em 0 .5em;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.site-title {
+  color: rgb(153, 18, 18);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.class-menu {
+  display: inline-block;
+  margin-left: 2em;
+  a {
+    margin: 0 .5rem;
+    color: #666;
+    &:hover {
+      color: #4d96b9;
+      text-decoration: none;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.filter {
+  dd {
+    display: inline-block;
+    margin: .5rem 1rem .5rem 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

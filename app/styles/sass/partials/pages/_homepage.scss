@@ -1,0 +1,63 @@
+section {
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin: 1em 0;
+  }
+}
+
+.spell-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  overflow-y: scroll;
+  &.active {
+    display: flex;
+    opacity: 1;
+    z-index: 100;
+    transition: opacity .5s ease;
+  }
+  h1 {
+    margin-bottom: 0;
+    color: #4d96b9;
+    line-height: 1.1;
+    + span {
+      font-style: italic;
+    }
+  }
+  .spell-info > div {
+    margin: .5em 0;
+  }
+  .modal-header {
+    margin-bottom: 1.25rem;
+  }
+  .modal-header,
+  .spell-info,
+  .spell-desc {
+    padding: 0 2.25rem;
+  }
+  .spell-info span {
+    font-weight: bold;
+    margin-right: .5em;
+  }
+  .spell-desc {
+    flex: 1;
+  }
+  button {
+    background: $black-default;
+    flex: 0 0 4rem;
+    text-align: center;
+    border: 0;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
