@@ -29,9 +29,10 @@ section {
   h1 {
     margin-bottom: 0;
     color: #4d96b9;
+    font-size: 2.35rem;
     line-height: 1.1;
     + span {
-      font-style: italic;
+      color: #999;
     }
   }
   .spell-info > div {
@@ -61,4 +62,13 @@ section {
     font-size: 2rem;
     color: #fff;
   }
+}
+
+.class-tags {
+  margin-top: 3rem;
+  padding: .75rem 0 1rem;
+  border-top: 1px solid #ccc;
+  color: #999;
+  font-size: .8rem;
+  font-style: italic;
 }

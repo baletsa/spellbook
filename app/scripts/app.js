@@ -23,6 +23,7 @@ var LMI = {
 
         c = this.class;
         cl = c.toLowerCase().split(',').join('');
+
         scribe = '<li><a class="' + cl + '" data-modal="' + this.name + '">' + this.name + '</a></li>';
 
         if (this.level.indexOf("1") >= 0) {
@@ -51,9 +52,14 @@ var LMI = {
           '<div class="spell-modal" data-name="' + this.name + '">' +
           '<div class="modal-header"><h1>' + this.name + '</h1><span>';
         if (this.level !== 'Cantrip') {
-          modalContent += this.level + ' ' + this.school + '</span></div>';
+          modalContent += this.level + ' ' + this.school;
         } else {
-          modalContent += this.school + ' ' + this.level + '</span></div>';
+          modalContent += this.school + ' ' + this.level;
+        }
+        if (this.ritual === 'yes') {
+          modalContent += ' (Ritual)</span></div>';
+        } else {
+          modalContent += '</span></div>';
         }
         modalContent += '<div class="spell-info">' +
           '<div class="casting-time"><span>Casting Time:</span>' + this.casting_time + '</div>' +
@@ -69,7 +75,7 @@ var LMI = {
           modalContent += '<div class="duration"><span>Duration:</span> ' + this.duration + '</div>';
         }
         modalContent += '</div>' +
-          '<div class="spell-desc">' + this.desc + '</div>' +
+          '<div class="spell-desc">' + this.desc + '<div class="class-tags"><strong>Available to:</strong> ' + this.class + '</div></div>' +
           '<button class="modal-close" type="button">Close</button>' +
           '</div>';
 
@@ -98,16 +104,16 @@ var LMI = {
           $('.spell-list a').filter(cl).parent('li').show();
           $(this).addClass('active');
           if ($(this).hasClass('ranger') || $(this).hasClass('paladin')) {
-            $('.spell-list .cantrips').hide();
+            $('.spell-list .cantrips, .spell-list .six, .spell-list .seven, .spell-list .eight, .spell-list .nine').hide();
           } else {
-            $('.spell-list .cantrips').show();
+            $('.spell-list section').show();
           }
         }
       });
 
       $('header .all').click(function() {
         $('.class-menu a').removeClass('active');
-        $('.spell-list .cantrips').show();
+        $('.spell-list section').show();
         $('.spell-list li').show();
       });
 
