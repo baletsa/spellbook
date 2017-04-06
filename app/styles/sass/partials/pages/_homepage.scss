@@ -1,4 +1,4 @@
-section {
+.spell-list section {
   ul {
     list-style-type: none;
   }
@@ -8,23 +8,19 @@ section {
 }
 
 .spell-modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -100;
   flex-direction: column;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  opacity: 0;
   overflow-y: scroll;
   &.active {
     display: flex;
-    opacity: 1;
-    z-index: 100;
-    transition: opacity .5s ease;
   }
   h1 {
     margin-bottom: 0;
@@ -51,24 +47,44 @@ section {
     margin-right: .5em;
   }
   .spell-desc {
-    flex: 1;
     line-height: 1.6;
   }
-  button {
-    background: $black-default;
+  .modal-body {
+    flex: 1;
+    //overflow: auto;
+  }
+  footer {
     flex: 0 0 4rem;
-    text-align: center;
-    border: 0;
-    font-size: 2rem;
-    color: #fff;
+    display: flex;
+    button {
+      background: $black-default;
+      flex: 1;
+      text-align: center;
+      border: 0;
+      font-size: 2rem;
+      color: #fff;
+    }
   }
 }
 
-.class-tags {
+.source {
   margin-top: 3rem;
   padding: .75rem 0 1rem;
   border-top: 1px solid #ccc;
   color: #999;
   font-size: .8rem;
   font-style: italic;
+}
+
+.pages {
+  margin-right: .5rem;
+  color: #ccc;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+// hack for right now while i reorganize the spelldata
+.higher-level > p:before {
+  content: 'At Higher Levels: ';
+  font-weight: bold;
 }
