@@ -6167,7 +6167,7 @@ var jsonSpellData = [{
       "class": "Druid, Ranger, Sorcerer, Wizard"
     }, {
       "name": "Toll the Dead",
-      "desc": "<p>You point at one creature you can see within range, envisioning its demise. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.</p><p>The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>",
+      "desc": "<p>You point at one creature you can see within range while envisioning its demise. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.</p><p>The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>",
       "page": "UA: Starter Spells",
       "range": "60 feet",
       "components": "V, S",
