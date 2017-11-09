@@ -101,12 +101,12 @@ $.getJSON('data/spellData.json', function(data) {
 
   });
 
+  // add loader for feedback
+  $('body').addClass('ready');
+
   $('body').on('click', '.spell-list a', function() {
-
     var target = $(this).data('modal');
-
     $('[data-name="' + target + '"]').addClass('active');
-
   });
 
   $('body').on('click', '.modal-close', function() {

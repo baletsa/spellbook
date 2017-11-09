@@ -1,8 +1,8 @@
 {
-  "name": "wildshape-app",
+  "name": "spellbook",
   "version": "1.2.0",
   "author": "Steve Baletsa",
-  "description": "app for animal forms in dnd 5e",
+  "description": "app for magic spells in dnd 5e",
   "homepage": "",
   "license": "UNLICENSED",
   "devDependencies": {
