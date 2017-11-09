@@ -9,9 +9,6 @@
 html {
   font-family: $font-primary;
   font-size: $default-font-size;
-  @media(max-width: $screen-xs-max) {
-    font-size: $default-font-size * .9;
-  }
 }
 
 //links

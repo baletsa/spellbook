@@ -1,5 +1,5 @@
-//That Old Black Magic v1.3
-var jsonSpellData = [{
+{
+  "spells": [{
     "name": "Abi-Dalzim's Horrid Wilting",
     "desc": "<p>You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.</p><p>This spells damage increases by 1d6 when you reach 5th Level (2d6), 11th level (3d6) and 17th level (4d6).</p>",
     "page": "ee pc 15",
@@ -645,7 +645,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "Cantrip",
     "school": "Evocation",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Branding Smite",
     "desc": "<p>The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it’s invisible, and the target sheds dim light in a 5-foot radius and can’t become invisible until the spell ends.</p>",
@@ -1035,7 +1035,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "4th-level",
     "school": "Conjuration",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Conjure Barrage",
     "desc": "<p>You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a dexterity saving throw. A creature takes 3d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component.</p>",
@@ -1093,7 +1093,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "7th-level",
     "school": "Conjuration",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Conjure Fey",
     "desc": "<p>You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.</p><p>The fey creature is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don’t issue any commands to the fey creature, it defends itself from hostile creatures but otherwise takes no actions.</p><p>If your concentration is broken, the fey creature doesn’t disappear. Instead, you lose control of the fey creature, it becomes hostile toward you and your companions, and it might attack. An uncontrolled fey creature can't be dismissed by you, and it disappears 1 hour after you summoned it.</p><p>The DM has the fey creature’s statistics.</p>",
@@ -1122,7 +1122,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "3rd-level",
     "school": "Conjuration",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Conjure Minor Elementals",
     "desc": "<p>You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:</p><p>- One elemental of challenge rating 2 or lower</p><p>- Two elementals of challenge rating 1 or lower</p><p>- Four elementals of challenge rating 1/2 or lower</p><p>- Eight elementals of challenge rating 1/4 or lower.</p><p>An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.</p><p>The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p><p>The DM has the creatures' statistics.</p>",
@@ -1150,7 +1150,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "4th-level",
     "school": "Conjuration",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Conjure Volley",
     "desc": "<p>You fire a piece of nonmagical ammunition from a ranged weapon or throw a nonmagical weapon into the air and choose a point within range. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in a 40-foot-radius. 20-foot-high cylinder centered on that point must make a dexterity saving throw. A creature takes 8d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the ammunition or weapon.</p>",
@@ -1178,7 +1178,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "5th-level",
     "school": "Conjuration",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Conjure Woodland Beings",
     "desc": "<p>You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:</p><p>- One fey creature of challenge rating 2 or lower</p><p>- Two fey creatures of challenge rating 1 or lower</p><p>- Four fey creatures of challenge rating 1/2 or lower</p><p>- Eight fey creatures of challenge rating 1/4 or lower</p><p>A summoned creature disappears when it drops to 0 hit points or when the spell ends.</p><p>The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p><p>The DM has the creatures’ statistics.</p>",
@@ -2712,7 +2712,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "Cantrip",
     "school": "Evocation",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Guardian of Faith",
     "desc": "<p>A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your deity.</p><p>Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.</p>",
@@ -3429,7 +3429,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "Cantrip",
     "school": "Evocation",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Locate Animals or Plants",
     "desc": "<p>Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.</p>",
@@ -5290,7 +5290,7 @@ var jsonSpellData = [{
     "casting_time": "1 action",
     "level": "Cantrip",
     "school": "Conjuration",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard"
   }, {
     "name": "Symbol",
     "desc": "<p>When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.</p><p>The glyph is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it.</p><p>You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph.</p><p>You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature’s physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don’t trigger the glyph, such as those who say a certain password.</p><p>When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there. </p><p><b>Death.</b> Each target must make a constitution saving throw, taking 10d 10 necrotic damage on a failed save, or half as much damage on a successful save.</p><p><b>Discord.</b> Each target must make a constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks.</p><p><b>Fear.</b> Each target must make a wisdom saving throw and becomes frightened for 1 minute on a failed save. While frightened, the target drops whatever it is holding and must move at least 30 feet away from the glyph on each of its turns, if able.</p><p><b>Hopelessness.</b> Each target must make a charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can’t attack or target any creature with harmful abilities, spells, or other magical effects.</p><p><b>Insanity.</b> Each target must make an intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can’t take actions, can't understand what other creatures say, can’t read, and speaks only in gibberish. The DM controls its movement, which is erratic.</p><p><b>Pain.</b> Each target must make a constitution saving throw and becomes incapacitated with excruciating pain for 1 minute on a failed save.</p><p><b>Sleep.</b> Each target must make a wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake.</p><p><b>Stunning.</b> Each target must make a wisdom saving throw and becomes stunned for 1 minute on a failed save.</p>",
@@ -6230,5 +6230,6 @@ var jsonSpellData = [{
       "level": "1st-level",
       "school": "Transmutation",
       "class": "Ranger"
-    },
-];
+    }
+  ]
+}
