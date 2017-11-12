@@ -34,7 +34,7 @@ module.exports = {
     dest: dest + '/fonts'
   },
   images: {
-    src: src + '/images/**/*.{png,jpg,gif}',
+    src: src + '/images/**/*.{png,jpg,gif,svg}',
     dest: dest + '/images'
   },
   markup: {

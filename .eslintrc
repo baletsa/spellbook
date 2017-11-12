@@ -32,7 +32,7 @@ rules:
   computed-property-spacing: [2, "never"]
   dot-location: [2, "property"]
 
-  #one-var: [1, "always"]
+  one-var: [0, "always"]
   #no-var: [2]
   prefer-const: [2]
   no-bitwise: [2]

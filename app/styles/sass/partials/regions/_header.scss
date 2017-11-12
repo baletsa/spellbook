@@ -1,50 +1,43 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  z-index: $z-index-9;
+  width: 100%;
+}
+
 header {
-  padding: 1em 0 .5em;
+  position: relative;
+  z-index: 2;
+  padding: .875em 0;
   border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .filter-menu {
+    flex: 0 0 auto;
+    align-self: flex-end;
+  }
 }
 
 .site-title {
+  display: block;
   color: rgb(153, 18, 18);
-  font-size: 2rem;
-  font-weight: bold;
-  margin-right: 1.75rem;
+  font-family: 'Chelsea Market', cursive, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1;
   &:hover {
     text-decoration: none;
   }
 }
 
-.class-menu {
-  display: inline-block;
-  a {
-    display: inline-block;
-    margin: .75rem .75rem .5rem 0;
-    padding: .5em .7em;
-    border: 1px solid #eee;
-    border-radius: 6px;
-    color: #666;
-    line-height: 1;
-    &:hover {
-      color: #4d96b9;
-      text-decoration: none;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-    &.active {
-      color: #4d96b9;
-      border-color: #4d96b9;
-      cursor: default;
-    }
-  }
+.site-reset {
+  flex: 0 0 auto;
 }
 
-.filter {
+.filter-menu .filter-menu--reset {
   display: none;
-  padding: 1em;
-}
-
-@media(max-width: $screen-xs-max) {
-  .class-menu {
-    font-size: $default-font-size * .9;
-  }
 }

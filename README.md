@@ -1,6 +1,6 @@
-# Wildshape Webapp 
+# 5e Spellbook 
 
-Repository for druidic animal forms for the 5th edition of dungeons and dragons.
+Repository for skeleton application for use as a starting point to build LMI marketing websites.
 
 ## Dependencies
 * [NodeJS v.8+](http://nodejs.org/)
@@ -96,6 +96,3 @@ The `watch` task only picks up on changes made to files that existed when the ta
 
 #### WTF are these messages complaining about my CSS?
 The project uses linting rules which enforce specific CSS formatting standards, including a custom sort order (_See "Writing SASS"_). Make sure to follow those guidelines before committing finalized code to the repository. You can use tools like CSSComb to automatically match these standards in the editor of your choice.
-
-#### Gulp is not picking up on changes that I made to a file? WTF?
-The `watch` task only picks up on changes made to files that existed when the task was started. When you edit a Gulp task, a config file, or add any new file to the `app` folder, you must stop and restart Gulp.

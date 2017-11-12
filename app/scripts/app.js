@@ -1,16 +1,20 @@
 const $ = require('jquery');
 
-$.getJSON('data/spellData.json', function(data) {
+fetch('data/spellData.json', {
+  method: 'get',
+}).then((response) =>
+  response.json()
+).then((data) => {
 
-  function SortByName(a, b) {
-    var aName = a.name.toLowerCase();
-    var bName = b.name.toLowerCase();
+  const SortByName = (a, b) => {
+    const aName = a.name.toLowerCase(),
+      bName = b.name.toLowerCase();
     return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
-  }
+  };
 
-  var spellbook = $(data.spells).sort(SortByName);
+  const spellbook = $(data.spells).sort(SortByName);
 
-  var cantrip = $('.cantrips ul'),
+  const cantrip = $('.cantrips ul'),
     l1 = $('.one ul'),
     l2 = $('.two ul'),
     l3 = $('.three ul'),
@@ -93,8 +97,8 @@ $.getJSON('data/spellData.json', function(data) {
     if (this.higher_level !== undefined) {
       modalContent += '<div class="higher-level">' + this.higher_level + '</div>';
     }
-    modalContent += '<div class="source"><span class="pages">' + this.page + ',</span><span class="class-tags"><strong>Available to:</strong> ' 
-      + this.class + '</span></div></div></div>' +
+    modalContent += '<div class="source"><span class="pages">' + this.page + ',</span><span class="class-tags"><strong>Available to:</strong> ' +
+      this.class + '</span></div></div></div>' +
       '<footer><button class="modal-close" type="button">Close</button></footer>' +
       '</section>';
     $('main').append(modalContent);
@@ -113,7 +117,7 @@ $.getJSON('data/spellData.json', function(data) {
     $(this).closest('.spell-modal').removeClass('active');
   });
 
-  $('.class-menu a').click(function() {
+  $('body').on('click', '.class-menu a', function() {
     if (!$(this).hasClass('active')) {
       var role = '.' + $(this).attr('class');
       $('.class-menu a').removeClass('active');
@@ -127,6 +131,11 @@ $.getJSON('data/spellData.json', function(data) {
         $('.spell-list section').show();
       }
     }
+    else {
+      $('.class-menu a').removeClass('active');
+      $('.spell-list section').show();
+      $('.spell-list li').show();
+    }
   });
 
   $('header .all').click(function() {
@@ -135,4 +144,10 @@ $.getJSON('data/spellData.json', function(data) {
     $('.spell-list li').show();
   });
 
+  $('body').on('click', '.filter-menu--trigger', function() {
+    $('.filter').toggleClass('active');
+  });
+
+}).catch(() => {
+  // Error :(
 });
