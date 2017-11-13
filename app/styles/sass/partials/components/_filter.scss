@@ -8,6 +8,47 @@
   cursor: pointer;
 }
 
+.filter__title-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 970px;
+  margin: auto;
+}
+
+.filter__title-bar {
+  margin-bottom: 1.5em;
+  padding: .5em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.filter__reset,
+.filter__title,
+.filter__close {
+  flex: 0 0 auto;
+}
+
+.filter__reset,
+.filter__close {
+  display: inline-block;
+}
+
+.filter__reset {
+  margin-left: 1em;
+}
+
+.filter__close {
+  margin-right: 1em;
+}
+
+.filter__title {
+  margin: 0;
+  font-size: .875rem;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .filter {
   position: absolute;
   top: 67px;
@@ -21,11 +62,10 @@
 }
 
 .filter__content {
-  display: flex;
-  flex-direction: column;
+  height: calc(100vh - 67px);
   overflow-y: scroll;
   margin: auto;
-  padding: 1em 0;
+  padding: 0 0 1em;
   border-bottom: 2px solid rgba(0, 0, 0, .1);
   background-color: #f1f1f1;
 }
@@ -132,6 +172,7 @@
 .filter__concentration .filter__options a,
 .filter__components .filter__options a {
   flex: 1 1 auto;
+  max-width: 200px;
 }
 
 .advanced__tab--button {

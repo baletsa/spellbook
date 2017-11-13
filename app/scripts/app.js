@@ -99,7 +99,7 @@ fetch('data/spellData.json', {
     }
     modalContent += '<div class="source"><span class="pages">' + this.page + ',</span><span class="class-tags"><strong>Available to:</strong> ' +
       this.class + '</span></div></div></div>' +
-      '<footer><button class="modal-close" type="button">Close</button></footer>' +
+      '<div class="spell-modal__bar"><div><a class="modal-close">Back</a></div></div>' +
       '</section>';
     $('main').append(modalContent);
 
