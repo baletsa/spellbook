@@ -24,6 +24,16 @@
       color: #999;
     }
   }
+  ul {
+    list-style-type: none;
+    li:before {
+      content: '\25AA';
+      display: inline-block;
+      width: 1.2em;
+      margin-left: -1.2em;
+      color: #ccc;
+    }
+  }
   .spell-info>div {
     margin: .5em 0;
   }

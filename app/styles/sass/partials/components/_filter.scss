@@ -71,12 +71,11 @@
 }
 
 .filter__options {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-gap: 10px;
   a {
     display: block;
-    flex: 0 0 auto;
-    margin: 0 .5rem .5em 0;
     padding: .5em .7em;
     border: 1px solid #eee;
     background-color: #fff;
@@ -168,11 +167,10 @@
   align-items: center;
 }
 
-.filter__ritual .filter__options a,
-.filter__concentration .filter__options a,
-.filter__components .filter__options a {
-  flex: 1 1 auto;
-  max-width: 200px;
+.filter__ritual .filter__options,
+.filter__concentration .filter__options,
+.filter__components .filter__options {
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 179px));
 }
 
 .advanced__tab--button {

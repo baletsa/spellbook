@@ -1,10 +1,17 @@
 table {
-  border: 1px solid #ccc;
   font-size: .875rem;
+}
+
+th {
+  background-color: #eee;
+  text-align: left;
+  &:first-child {
+    text-align: center;
+  }
 }
 
 th,
 td {
   border: 1px solid #ccc;
-  padding: .75em;
+  padding: .5em .75em;
 }
