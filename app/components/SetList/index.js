@@ -11,14 +11,16 @@ export class SetList extends Component {
   constructor(props) {
     super(props);
     this.state = {spells: []};
-    this.getData = this.getData.bind(this);
   }
 
   render() {
+    let titleText = this.props.level;
+    if (titleText === 'Cantrip') {
+      titleText += 's';
+    }
     return (
-      <ul>
-        {list}
-      </ul>
+      <h2>{titleText}</h2>
+      <ul></ul>
     );
   }
 
