@@ -1,5 +1,3 @@
-const $ = require('jquery');
-
 fetch('data/spellData.json', {
   method: 'get',
 }).then((response) =>
