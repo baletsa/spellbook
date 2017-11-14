@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 import './main.css';
 
+const app = document.getElementById('app');
 
 class CoreApp extends Component {
   
@@ -13,7 +15,7 @@ class CoreApp extends Component {
 
   getData() {
 
-    var url = 'data/spellData.json';
+    const url = 'data/spellData.json';
 
     fetch(url, {
       method: 'get',
@@ -34,4 +36,4 @@ class CoreApp extends Component {
 
 }
 
-ReactDOM.render(<CoreApp /> , getElementById('app'));
+ReactDOM.render(<CoreApp /> , app);

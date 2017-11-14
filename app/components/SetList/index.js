@@ -2,19 +2,25 @@
 // Import Dependencies
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
-import PropTypes from 'prop-types';
 
 // Import Stylesheet
-import styles from './modal.css';
+// import styles from './modal.css';
 
 @observer
-class SpellDetail extends React.Component {
+export class SetList extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {spells: []};
+    this.getData = this.getData.bind(this);
+  }
+
   render() {
     return (
       <ul>
-        
+        {list}
       </ul>
     );
   }
+
 };
-export default SpellDetail;
+export SetList;
