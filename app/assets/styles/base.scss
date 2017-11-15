@@ -1,3 +1,5 @@
+@import 'vars';
+
 * {
   box-sizing: border-box;
 }
@@ -92,10 +94,32 @@ textarea {
   resize: vertical;
 }
 
-%btn {
-  text-align: center;
+//
+// Helper styles
+//
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1px 15px;
+}
 
-  cursor: pointer;
-  white-space: nowrap;
-  vertical-align: middle;
+table {
+  font-size: .875rem;
+}
+
+th {
+  background-color: #eee;
+  text-align: left;
+  &:first-child {
+    text-align: center;
+  }
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: .5em .75em;
 }
