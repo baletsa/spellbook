@@ -6,16 +6,14 @@ import FilterTrigger from '../FilterTrigger';
 
 const Header = () => {
     return (
-      <div className={styles.header}>
-        <header>
-          <div className="content">
-            <div className="site-reset">
-              <a className="site-title all">SpellbOOK</a>
-            </div>
-            <FilterTrigger />
+      <header className="site-header">
+        <div className="content">
+          <div className="site-reset">
+            <a className="site-title all">SpellbOOK</a>
           </div>
-        </header>
-      </div>
+          <FilterTrigger />
+        </div>
+      </header>
     );
 };
 
