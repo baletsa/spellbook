@@ -5,6 +5,7 @@ import Header from '../Header';
 
 import SpellList from '../SpellList';
 
+import '../../assets/styles/reset.scss';
 import '../../assets/styles/base.scss';
 import './main.scss';
 
