@@ -11,7 +11,6 @@ import './main.scss';
 
 class Main extends React.Component {
   render() {
-
     const SortByName = (a, b) => {
       const aName = a.name.toLowerCase(),
         bName = b.name.toLowerCase();
@@ -25,6 +24,12 @@ class Main extends React.Component {
         <Header />
         <div className="spell-list">
           <div className="content">
+            <div className="spell-list-sort">
+              <select className="sort-toggle">
+                <option className="spell-list-sort-name">Sort by Name</option>
+                <option className="spell-list-sort-level">Sort by Level</option>
+              </select>
+            </div>
             <SpellList spells={spells} />
           </div>
         </div>

@@ -2,9 +2,10 @@ import React from 'react';
 
 import styles from './filter.scss';
 
-const Filter = () => {
+class Filter extends React.Component {  
+  render() {
     return (
-      <section className="filter">
+      <section className={`filter ${ this.props.openFilter }`}>
         <div className="filter__content">
           <div className="filter__title-bar">
             <div className="filter__title-bar-content">
@@ -78,7 +79,8 @@ const Filter = () => {
           </div>
         </div>
       </section>
-    );
+    )
+  }
 };
 
 export default Filter;

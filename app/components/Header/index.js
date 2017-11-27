@@ -3,10 +3,21 @@ import React from 'react';
 import styles from './header.scss';
 
 import Filter from '../Filter';
-import FilterTrigger from '../FilterTrigger';
 
+class Header extends React.Component {
+  constructor() {
+      super();
+      this.state = {filterVisible: false}
+      this.toggleFilter = this.toggleFilter.bind(this)
+  }
 
-const Header = () => {
+  toggleFilter() {
+    let trigger = this.state.filterVisible === false  ? true : false
+    console.log(trigger)
+    this.setState({ filterVisible: trigger })
+  }
+
+  render() {
     return (
       <div className="site-header">
         <header>
@@ -14,12 +25,15 @@ const Header = () => {
             <div className="site-reset">
               <a className="site-title all">SpellbOOK</a>
             </div>
-            <FilterTrigger />
+            <div className="filter-menu">
+              <a className="filter-menu--trigger" onClick={this.toggleFilter}>Filter</a>
+            </div>
           </div>
         </header>
-        <Filter />
+        <Filter openFilter={this.state.filterVisible ? 'active' : null} />
       </div>
-    );
+    )
+  }
 };
 
 export default Header;
