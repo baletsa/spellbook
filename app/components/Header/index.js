@@ -7,14 +7,23 @@ import Filter from '../Filter';
 class Header extends React.Component {
   constructor() {
       super();
-      this.state = {filterVisible: false}
+      this.state = {
+        filterVisible: false, 
+        buttonVisible: true 
+      }
       this.toggleFilter = this.toggleFilter.bind(this)
   }
 
   toggleFilter() {
-    let trigger = this.state.filterVisible === false  ? true : false
-    console.log(trigger)
-    this.setState({ filterVisible: trigger })
+    let filterVisible = this.state.filterVisible === false  ? true : false
+    let buttonVisible = this.state.buttonVisible === true  ? false : true
+    if (!document.body.classList.contains('stop-scroll')) {
+      document.body.className += ' ' + 'stop-scroll'
+    }
+    else {
+      document.body.classList.remove('stop-scroll')
+    }
+    this.setState({ filterVisible: filterVisible, buttonVisible: buttonVisible})
   }
 
   render() {
@@ -26,7 +35,7 @@ class Header extends React.Component {
               <a className="site-title all">SpellbOOK</a>
             </div>
             <div className="filter-menu">
-              <a className="filter-menu--trigger" onClick={this.toggleFilter}>Filter</a>
+              <a className={`filter-menu--trigger ${this.state.filterVisible ? 'active' : null}`} onClick={this.toggleFilter}>Filter</a>
             </div>
           </div>
         </header>

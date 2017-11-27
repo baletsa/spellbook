@@ -43,6 +43,7 @@ header {
 .filter-menu--trigger {
   display: flex;
   align-items: center;
+  opacity: 1;
   margin: 0 .75rem 0 0;
   padding: .3em .6em;
   border: 1px solid #bbb;
@@ -50,7 +51,7 @@ header {
   background-color: #fff;
   color: #666;
   line-height: 1;
-  transition: box-shadow .3s ease-out;
+  transition: all .3s ease-out;
   &:hover {
     color: #4d96b9;
     text-decoration: none;
@@ -60,6 +61,7 @@ header {
     margin-right: 0;
   }
   &.active {
+    opacity: 0;
     border-color: #4d96b9;
     color: #4d96b9;
     cursor: default;

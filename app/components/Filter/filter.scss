@@ -161,3 +161,8 @@
 .filter__class {
   margin-bottom: 1em;
 }
+
+// prevent scroll when filter open
+.stop-scroll {
+  overflow: hidden;
+}
