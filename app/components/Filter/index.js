@@ -3,6 +3,10 @@ import React from 'react';
 import styles from './filter.scss';
 
 class Filter extends React.Component {  
+  constructor() {
+    super();
+  }
+
   render() {
     return (
       <section className={`filter ${ this.props.openFilter }`}>
@@ -11,7 +15,7 @@ class Filter extends React.Component {
             <div className="filter__title-bar-content">
               <a className="filter__reset">Clear</a>
               <h2 className="filter__title">Filters</h2>
-              <a className="filter__close">Close</a>
+              <a className="filter__close" onClick={this.props.toggleFilter}>Close</a>
             </div>
           </div>
           <div className="filter__element filter__class">

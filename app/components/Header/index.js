@@ -39,7 +39,7 @@ class Header extends React.Component {
             </div>
           </div>
         </header>
-        <Filter openFilter={this.state.filterVisible ? 'active' : null} />
+        <Filter openFilter={this.state.filterVisible ? 'active' : null} toggleFilter={this.toggleFilter} />
       </div>
     )
   }

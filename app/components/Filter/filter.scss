@@ -102,6 +102,15 @@
   }
 }
 
+.filter__options .active {
+  border-color: #2f5f75;
+  background-color: #4d96b9;
+  color: #fff;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 .filter__label {
   display: block;
   height: 21px;
