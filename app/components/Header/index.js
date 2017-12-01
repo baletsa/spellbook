@@ -5,8 +5,8 @@ import styles from './header.scss';
 import Filter from '../Filter';
 
 class Header extends React.Component {
-  constructor() {
-      super();
+  constructor(props) {
+      super(props);
       this.state = {
         filterVisible: false, 
         buttonVisible: true 

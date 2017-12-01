@@ -3,8 +3,16 @@ import React from 'react';
 import styles from './filter.scss';
 
 class Filter extends React.Component {  
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = {
+      'applyFilter': false
+    }
+    this.applyFilter = this.applyFilter.bind(this);
+  }
+
+  applyFilter() {
+    this.setState({"applyFilter": true});
   }
 
   render() {
@@ -21,7 +29,7 @@ class Filter extends React.Component {
           <div className="filter__element filter__class">
             <h3 className="filter__label">Class</h3>
             <div className="filter__options">
-              <a className="bard">Bard</a>
+              <a className="bard" onClick={this.applyFilter}>Bard</a>
               <a className="cleric">Cleric</a>
               <a className="druid">Druid</a>
               <a className="paladin">Paladin</a>
