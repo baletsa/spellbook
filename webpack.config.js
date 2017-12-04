@@ -27,11 +27,6 @@ module.exports = {
         }
       },
       {
-        test: /\.js$/,
-        exclude: [/libs/, /node_modules/],
-        loader: "eslint-loader"
-      },
-      {
         test: /\.scss$/,
         use: [{
           loader: "style-loader"

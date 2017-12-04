@@ -22,7 +22,7 @@ class Main extends React.Component {
     return (
       <div>
         <Header />
-        <div className="spell-list">
+        <main className="spellbook-content">
           <div className="content">
             <div className="spell-list-sort">
               <select className="sort-toggle">
@@ -32,7 +32,7 @@ class Main extends React.Component {
             </div>
             <SpellList spells={spells} />
           </div>
-        </div>
+        </main>
       </div>
     );
   }
