@@ -70,9 +70,9 @@
   max-height: 0;
   overflow: hidden;
   &.active {
-    max-height: 1000px;
+    max-height: 3000px;
     padding: 1.5em;
-    transition: max-height 0.15s ease;
+    transition: max-height .75s ease;
   }
 }
 
