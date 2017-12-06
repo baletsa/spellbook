@@ -1,37 +1,51 @@
 .spell {
   margin-bottom: 10px;
-}
-
-.spell-list-item {
-  display: flex;
-  align-items: center;
-  padding: 1em .75em;
   border: 1px solid #ddd;
-  cursor: pointer;
   transition: box-shadow .3s ease-out;
   &:hover {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .14), 0 1px 7px 0 rgba(0, 0, 0, .12), 0 3px 1px -1px rgba(0, 0, 0, .2);
   }
 }
 
+.spell-list-item {
+  display: flex;
+  align-items: center;
+  padding: 1em .75em;
+  cursor: pointer;
+}
+
 .spell_item-level {
   flex: 0 0 45px;
+  opacity: 1;
+  margin-right: 12px;
   color: #666;
   font-size: .75rem;
+  transition: opacity .15s;
+  .active & {
+    opacity: 0;
+  }
 }
 
 .spell_item-name {
-  flex: 2 1 auto; //color: #4d96b9;
+  flex: 2 1 auto;
   font-family: 'Libre Baskerville', serif;
   line-height: 1.5;
+  transition: color .15s;
+  .active & {
+    // color: #4d96b9;
+    color: #991212;
+  }
 }
 
 .spell_item-trigger {
   flex: 0 0 12px;
   height: 6px;
-  margin-left: 12px;
   background-image: url('../../assets/images/open-arrow.svg');
   background-size: 100% auto;
+  transition: transform .15s;
+  .active & {
+    transform: rotate(180deg);
+  }
 }
 
 .spell_item-school {
@@ -46,6 +60,11 @@
   margin: 20px 0 10px;
   color: #bbb;
   font-size: .75rem;
+}
+
+.spell-list-sort {
+  visibility: hidden;
+  margin-top: 0;
 }
 
 .sort-toggle {
@@ -64,20 +83,44 @@
 }
 
 .spell-list-info {
-  background-color: #fafafa;
-  box-shadow: inset 0 1px 3px rgba(155, 155, 155, .25);
+  // box-shadow: inset 0 1px 3px rgba(155, 155, 155, .25);
   line-height: 1.5;
   max-height: 0;
   overflow: hidden;
   &.active {
     max-height: 3000px;
-    padding: 1.5em;
+    padding: 0 1.5em 1.5em;
     transition: max-height .75s ease;
   }
 }
 
 .spell_info-ritual {
   text-transform: capitalize;
+}
+
+.spell_info-stats > div {
+  margin-bottom: 5px;
+}
+
+.spell_info-cta {
+  margin-top: 35px;
+  button {
+    padding: .5em 1em;
+    border: 0;
+    border-radius: 0;
+    //background-color: #4d96b9;
+    background-color: #bbb;
+    box-shadow: 0;
+    color: #fff;
+    font-size: .875rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .25s;
+    &:hover {
+      //background-color: #377390;
+      background-color: #aaa;
+    }
+  }
 }
 
 @media (min-width: 601px) {
