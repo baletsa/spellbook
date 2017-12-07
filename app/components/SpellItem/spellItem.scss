@@ -104,22 +104,9 @@
 
 .spell_info-cta {
   margin-top: 35px;
-  button {
-    padding: .5em 1em;
-    border: 0;
-    border-radius: 0;
-    //background-color: #4d96b9;
-    background-color: #bbb;
-    box-shadow: 0;
-    color: #fff;
+  a {
+    color: #bbb;
     font-size: .875rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color .25s;
-    &:hover {
-      //background-color: #377390;
-      background-color: #aaa;
-    }
   }
 }
 

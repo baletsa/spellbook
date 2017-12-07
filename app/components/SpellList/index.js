@@ -16,7 +16,7 @@ class SpellList extends React.Component {
       <div className="spell-list">
        {
           this.state.spells.map(spell =>
-            <SpellItem spell={spell} key={spell.id} />
+            <SpellItem spell={spell} key={spell.name} />
           )
        }
       </div>

@@ -44,7 +44,7 @@ class SpellItem extends React.Component {
             {spell.higher_level ? <div className='spell_info-higher_level' dangerouslySetInnerHTML={{__html: spell.higher_level}} /> : null}
           </div>
           <div className='spell_info-cta'>
-            <button className='spell-detail-button' onClick={this.showSpell}>View Detail Page</button>
+            <a className='spell-detail-button' onClick={this.showSpell}>View Detail Page</a>
           </div>
         </div>
       </div>
