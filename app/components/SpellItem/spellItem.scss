@@ -28,6 +28,7 @@
 
 .spell_item-name {
   flex: 2 1 auto;
+  padding-right: 15px;
   font-family: 'Libre Baskerville', serif;
   line-height: 1.5;
   transition: color .15s;
@@ -107,6 +108,12 @@
   a {
     color: #bbb;
     font-size: .875rem;
+  }
+}
+
+.spell_info-higher_level {
+  p {
+    display: inline;
   }
 }
 
