@@ -1,5 +1,7 @@
 import React from 'react';
 
+import FilterButton from '../FilterButton';
+
 import styles from './filter.scss';
 
 const filterData = [
@@ -27,6 +29,22 @@ const filterData = [
 class Filter extends React.Component {  
   constructor(props) {
     super(props);
+    this.state = {
+      items: this.props.spells
+    }
+  }
+
+  clearFilter() {
+    console.log('clear filter')
+  }
+
+  filterList(event) {
+    var updatedList = this.state.initialItems;
+    updatedList = updatedList.filter(function(item){
+      return item.toLowerCase().search(
+        event.target.value.toLowerCase()) !== -1;
+    });
+    this.setState({items: updatedList});
   }
 
   render() {
@@ -35,19 +53,19 @@ class Filter extends React.Component {
         <div className="filter__content">
           <div className="filter__title-bar">
             <div className="filter__title-bar-content">
-              <a className="filter__reset">Clear</a>
+              <a className="filter__reset" onClick={this.clearFilter}>Clear</a>
               <h2 className="filter__title">Filters</h2>
               <a className="filter__close" onClick={this.props.toggleFilter}>Close</a>
             </div>
           </div>       
           {
             filterData.map(filter =>
-              <div className={`filter__element filter__${filter.title}`}>
+              <div key={filter.title} className={`filter__element filter__${filter.title}`}>
                 <h3 className="filter__label">{filter.title}</h3>
                 <div className="filter__options">
                   {
                     filter.options.map(button =>
-                      <a className={button}>{button}</a>
+                      <FilterButton key={button} className={button} buttonName={button} onChange={this.filterList} />
                     )
                   }
                 </div>
