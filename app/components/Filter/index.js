@@ -38,15 +38,6 @@ class Filter extends React.Component {
     console.log('clear filter')
   }
 
-  filterList(event) {
-    var updatedList = this.state.initialItems;
-    updatedList = updatedList.filter(function(item){
-      return item.toLowerCase().search(
-        event.target.value.toLowerCase()) !== -1;
-    });
-    this.setState({items: updatedList});
-  }
-
   render() {
     return (
       <section className={`filter ${ this.props.openFilter }`}>
@@ -65,7 +56,7 @@ class Filter extends React.Component {
                 <div className="filter__options">
                   {
                     filter.options.map(button =>
-                      <FilterButton key={button} className={button} buttonName={button} onChange={this.filterList} />
+                      <FilterButton key={button} className={button} buttonName={button} />
                     )
                   }
                 </div>

@@ -8,10 +8,10 @@ class FilterButton extends React.Component {
     this.state = {
       toggle: false
     }      
-    this.toggleButton = this.toggleButton.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
-  toggleButton() {
+  handleClick() {
     this.setState({
       toggle: !this.state.toggle
     })
@@ -19,7 +19,7 @@ class FilterButton extends React.Component {
 
   render() {
     return (
-      <a className={`${this.state.toggle ? 'active' : null}`} onClick={this.toggleButton}>{this.props.buttonName}</a>
+      <a className={`${this.state.toggle ? 'active' : null}`} onClick={this.handleClick} >{this.props.buttonName}</a>
     )
   }
 };

@@ -19,7 +19,8 @@ class SpellItem extends React.Component {
   }
 
   render() {
-    const spell = this.props.spell;
+    const spell = this.props.spell,
+          url = spell.name.replace(/'/g, '').replace(/[\/\s-]+/g, '-').toLowerCase();
     return (
       <div key={spell.id} item={spell} className='spell'>
         <div className={`spell-list-item ${this.state.isVisible ? 'active' : null}`} onClick={this.showSpell}>
@@ -44,7 +45,7 @@ class SpellItem extends React.Component {
             {spell.higher_level ? <div className='spell_info-higher_level' dangerouslySetInnerHTML={{__html: '<b>At Higher Levels: </b> ' + spell.higher_level}} /> : null}
           </div>
           <div className='spell_info-cta'>
-            <a className='spell-detail-button' onClick={this.showSpell}>View Detail Page</a>
+            <Link className='spell-detail-button' spell={{spell}} to={`/spells/${url}`}>View Detail Page</Link>
           </div>
         </div>
       </div>

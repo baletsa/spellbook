@@ -11,33 +11,28 @@ class DetailView extends React.Component {
 
   render() {
     return (
-      <div key={spell.id} item={spell} className='spell'>
-        <div className={`spell-list-item ${this.state.isVisible ? 'active' : null}`} onClick={this.showSpell}>
-          <div className='spell_item-name'>{spell.name}</div>
-          <div className='spell_item-level'>{spell.level}</div>
+      <div className='spell'>
+            {console.log(this.props.spell)}
+        <div className='spell-list-item'>
+          <div className='spell_item-name'>{this.props.spell.name}</div>
+          <div className='spell_item-level'>{this.props.spell.level}</div>
           <div className='spell_item-trigger'></div>
         </div>
-        <div className={`spell-list-info ${this.state.isVisible ? 'active' : null}`}>
+        <div className='spell-list-info'>
           <div className='spell_info-stats'>
-            <div className='spell_info-level'><b>Level:</b> {spell.level}</div>
-            <div className='spell_info-school'><b>School:</b> {spell.school}</div>
-            <div className='spell_info-range'><b>Range:</b> {spell.range}</div>
+            <div className='spell_info-level'><b>Level:</b> {this.props.spell.level}</div>
+            <div className='spell_info-school'><b>School:</b> {this.props.spell.school}</div>
+            <div className='spell_info-range'><b>Range:</b> {this.props.spell.range}</div>
             <div className='spell_info-comp'>
-              <b>Components:</b> {spell.material ? `${spell.components} (${spell.material})` : spell.components}
+              <b>Components:</b> {this.props.spell.material ? `${this.props.spell.components} (${this.props.spell.material})` : this.props.spell.components}
             </div>
             <div className='spell_info-duration'><b>Duration:</b> {spell.duration}</div>
             <div className='spell_info-castingtime'><b>Casting Time:</b> {spell.casting_time}</div>
             <div className='spell_info-ritual'><b>Ritual:</b> {spell.ritual}</div>
           </div>
           <div className='spell_info-desc'>
-            <div className='spell_info-content' dangerouslySetInnerHTML={{__html: spell.desc}} />
-            {spell.higher_level ? <div className='spell_info-higher_level' dangerouslySetInnerHTML={{__html: spell.higher_level}} /> : null}
-          </div>
-          <div className='spell_info-cta'>
-            <Link to={`${match.url}/${linkName}`} component={DetailView} spell={this.props.spell}>
-              View Detail Page
-            </Link>
-            <button className='spell-detail-button' onClick={this.showSpell}>View Detail Page</button>
+            <div className='spell_info-content' dangerouslySetInnerHTML={{__html: this.props.spell.desc}} />
+            {this.props.spell.higher_level ? <div className='spell_info-higher_level' dangerouslySetInnerHTML={{__html: this.props.spell.higher_level}} /> : null}
           </div>
         </div>
       </div>
