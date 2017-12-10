@@ -1,16 +1,16 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Main from './components/Main'
-import DetailView from './components/DetailView'
+import Main from "./components/Main"
+import DetailView from "./components/DetailView"
 
 const Routes = () => (
-  <BrowserRouter>
+  <Router>
     <Switch>
       <Route exact path="/" component={Main}/>
-      <Route path="/spells/:spellName" component={DetailView} />
+      <Route path="/spells/:spellName" component={DetailView}/>
     </Switch>
-  </BrowserRouter>
+  </Router>
 )
 
 export default Routes;

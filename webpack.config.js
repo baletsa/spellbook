@@ -11,6 +11,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'app'),
+    historyApiFallback: true
   },
   output: {
     path: path.resolve(__dirname, '/build'),

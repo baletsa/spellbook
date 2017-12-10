@@ -45,7 +45,7 @@ class SpellItem extends React.Component {
             {spell.higher_level ? <div className='spell_info-higher_level' dangerouslySetInnerHTML={{__html: '<b>At Higher Levels: </b> ' + spell.higher_level}} /> : null}
           </div>
           <div className='spell_info-cta'>
-            <Link className='spell-detail-button' spell={{spell}} to={`/spells/${url}`}>View Detail Page</Link>
+            <Link className='spell-detail-button' to={ { pathname: `/spells/${url}`}}>View Detail Page</Link>
           </div>
         </div>
       </div>
