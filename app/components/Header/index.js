@@ -9,7 +9,8 @@ class Header extends React.Component {
       super(props);
       this.state = {
         filterVisible: false, 
-        buttonVisible: true 
+        buttonVisible: true, 
+        isFixed: this.props.isFixed
       }
       this.toggleFilter = this.toggleFilter.bind(this)
   }
@@ -28,7 +29,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="site-header">
+      <div className={`site-header ${this.state.isFixed ? 'fixed' : null}`} >
         <header>
           <div className="content">
             <div className="site-reset">

@@ -3,7 +3,6 @@ import React from 'react';
 import data from '../../data/spellData.json';
 
 import Header from '../Header';
-
 import SpellList from '../SpellList';
 
 import '../../assets/styles/reset.scss';
@@ -22,7 +21,7 @@ class Main extends React.Component {
 
     return (
       <div>
-        <Header />
+        <Header isFixed={true} />
         <main className="spellbook-content">
           <div className="content">
             <div className="spell-list-sort">
