@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Link } from 'react-router-dom'
 
 import styles from './header.scss';
 
@@ -8,6 +9,7 @@ class Header extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
+        filterButton: this.props.filter, 
         filterVisible: false, 
         buttonVisible: true, 
         isFixed: this.props.isFixed
@@ -28,19 +30,30 @@ class Header extends React.Component {
   }
 
   render() {
+
+    let button = null;
+    let filter = null;
+    if(this.state.filterButton) {
+      button = <a className={`filter-menu--trigger ${this.state.filterVisible ? 'active' : null}`} onClick={this.toggleFilter}>Filter</a>
+      filter = <Filter openFilter={this.state.filterVisible ? 'active' : null} toggleFilter={this.toggleFilter} />
+    } else {
+      button = null
+      filter = null
+    }
+
     return (
       <div className={`site-header ${this.state.isFixed ? 'fixed' : null}`} >
         <header>
           <div className="content">
             <div className="site-reset">
-              <a className="site-title all">SpellbOOK</a>
+              <Link className='site-title all' to='/'>SpellbOOK</Link>
             </div>
             <div className="filter-menu">
-              <a className={`filter-menu--trigger ${this.state.filterVisible ? 'active' : null}`} onClick={this.toggleFilter}>Filter</a>
+              {button}
             </div>
           </div>
         </header>
-        <Filter openFilter={this.state.filterVisible ? 'active' : null} toggleFilter={this.toggleFilter} />
+        {filter}
       </div>
     )
   }

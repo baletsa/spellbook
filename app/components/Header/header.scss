@@ -10,6 +10,7 @@
 header {
   position: relative;
   z-index: 2;
+  min-height: 50px;
   padding: .5em 0;
   border-bottom: 1px solid #bbb;
   background-color: #f1f1f1;
@@ -30,7 +31,7 @@ header {
   font-family: 'Cinzel Decorative', cursive, sans-serif;
   font-size: 1.5rem;
   font-weight: normal;
-  line-height: 1;
+  line-height: 29px;
   &:hover {
     text-decoration: none;
   }

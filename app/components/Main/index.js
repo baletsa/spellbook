@@ -21,7 +21,7 @@ class Main extends React.Component {
 
     return (
       <div>
-        <Header isFixed={true} />
+        <Header isFixed={true} filter={true} />
         <main className="spellbook-content">
           <div className="content">
             <div className="spell-list-sort">

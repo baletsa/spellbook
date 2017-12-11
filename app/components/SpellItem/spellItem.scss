@@ -12,6 +12,9 @@
   align-items: center;
   padding: 1em .75em;
   cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .spell_item-level {
@@ -21,21 +24,14 @@
   color: #666;
   font-size: .75rem;
   transition: opacity .15s;
-  .active & {
-    opacity: 0;
-  }
 }
 
 .spell_item-name {
   flex: 2 1 auto;
   padding-right: 15px;
+  color: #000;
   font-family: 'Libre Baskerville', serif;
   line-height: 1.5;
-  transition: color .15s;
-  .active & {
-    // color: #4d96b9;
-    color: #991212;
-  }
 }
 
 .spell_item-trigger {
@@ -43,10 +39,7 @@
   height: 6px;
   background-image: url('../../assets/images/open-arrow.svg');
   background-size: 100% auto;
-  transition: transform .15s;
-  .active & {
-    transform: rotate(180deg);
-  }
+  transform: rotate(-90deg);
 }
 
 .spell_item-school {

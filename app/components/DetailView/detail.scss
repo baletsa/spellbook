@@ -1,15 +1,19 @@
 .spell-detail {
   max-width: 970px;;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 90px auto 40px;
+  padding: 0 15px;
   h1 {
-    margin: 0 0 .25em;
+    margin: 0 0 30px;
     color: #991212;
-    font-size: 2.35rem;
+    font-size: 2rem;
     line-height: 1.1;
   }
   ul {
+    padding-left: 2em;
     list-style-type: none;
+    li {
+      margin-bottom: 1em;
+    }
     li:before {
       content: '\25AA';
       display: inline-block;
@@ -18,10 +22,28 @@
       color: #ccc;
     }
   }
-  .spell_detail-cta {
-    margin-top: 40px;
+}
+
+.spell_detail-stats > div {
+  margin: .75em 0;
+  line-height: 1.35;
+}
+
+.spell_detail-desc {
+  margin-top: 30px;
+  line-height: 1.55;
+}
+
+.spell_detail-cta {
+  margin-top: 30px;
+  a {
+    color: #bbb;
   }
-  .spell_info-content {
-    line-height: 1.4;
+}
+
+.spell_detail-higher_level {
+  line-height: 1.55;
+  p {
+    display: inline;
   }
 }
