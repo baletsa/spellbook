@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, withRouter } from 'react-router-dom'
 
 import styles from './header.scss';
 
@@ -9,10 +9,8 @@ class Header extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
-        filterButton: this.props.filter, 
         filterVisible: false, 
         buttonVisible: true, 
-        isFixed: this.props.isFixed
       }
       this.toggleFilter = this.toggleFilter.bind(this)
   }
@@ -30,27 +28,30 @@ class Header extends React.Component {
   }
 
   render() {
+    const { match, location, history } = this.props
 
-    let button = null;
-    let filter = null;
-    if(this.state.filterButton) {
-      button = <a className={`filter-menu--trigger ${this.state.filterVisible ? 'active' : null}`} onClick={this.toggleFilter}>Filter</a>
+    let headerLink = null,
+        filterButton = null,
+        filter = null;
+
+    if(location.pathname === '/') {
+      headerLink = <span className='site-title'>SpellbOOK</span>
+      filterButton = <div className="filter-menu"><a className={`filter-menu--trigger ${this.state.filterVisible ? 'active' : null}`} onClick={this.toggleFilter}>Filter</a></div>
       filter = <Filter openFilter={this.state.filterVisible ? 'active' : null} toggleFilter={this.toggleFilter} />
     } else {
-      button = null
+      headerLink = <Link className='back-button' to='/'>Back to spell list</Link>
+      filterButton = null
       filter = null
     }
 
     return (
-      <div className={`site-header ${this.state.isFixed ? 'fixed' : null}`} >
+      <div className="site-header" >
         <header>
           <div className="content">
-            <div className="site-reset">
-              <Link className='site-title all' to='/'>SpellbOOK</Link>
+            <div className="header-link">
+              {headerLink}
             </div>
-            <div className="filter-menu">
-              {button}
-            </div>
+            {filterButton}
           </div>
         </header>
         {filter}
@@ -59,4 +60,4 @@ class Header extends React.Component {
   }
 };
 
-export default Header;
+export default withRouter(Header);

@@ -45,9 +45,6 @@ const DetailView = ({ match }) => {
               <div className='spell_detail-content' dangerouslySetInnerHTML={{__html: spell.desc}} />
               {spell.higher_level ? <div className='spell_detail-higher_level' dangerouslySetInnerHTML={{__html: '<b>At Higher Levels: </b> ' + spell.higher_level}} /> : null}
             </div>
-            <div className='spell_detail-cta'>
-              <Link className='back-button' to='/'>&laquo; Back to spell list</Link>
-            </div>
           </article>
         </div>
     )

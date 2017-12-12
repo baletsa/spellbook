@@ -1,10 +1,8 @@
 .site-header {
+  position: fixed;
   top: 0;
   z-index: 900;
   width: 100%;
-  &.fixed {
-    position: fixed;
-  }
 }
 
 header {
@@ -37,9 +35,37 @@ header {
   }
 }
 
-.site-reset {
+.header-link {
   flex: 0 0 auto;
 }
+
+.back-button {
+  display: flex;
+  align-items: center;
+  padding: .4em .6em .4em .3em;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #666;
+  line-height: 1;
+  transition: all .3s ease-out;
+  &:hover {
+    color: #4d96b9;
+    text-decoration: none;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .14), 0 1px 7px 0 rgba(0, 0, 0, .12), 0 3px 1px -1px rgba(0, 0, 0, .2);
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+    margin-right: 5px;
+    background-image: url('../../assets/images/open-arrow.svg');
+    background-size: 100% auto;
+    transform: rotate(90deg);
+  }
+}
+
 
 // FilterTrigger
 
