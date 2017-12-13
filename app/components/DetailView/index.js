@@ -24,7 +24,9 @@ const DetailView = ({ match }) => {
     matchSpell.map(spell =>
         <div key={spell.name}>
           <ScrollToTopOnMount/>
-          <Header isFixed={true} filter={false} />
+          <div className='site-header'>
+            <Header />
+          </div>
           <article className='spell-detail'>
             <div className='spell_detail-header'>
               <h1 className='spell_item-name'>{spell.name}</h1>
