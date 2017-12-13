@@ -14,16 +14,30 @@ class Main extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      spells: data.spells
+      spells: data.spells,
+      filterVisible: false
     }
+    this.toggleFilter = this.toggleFilter.bind(this)
+  }
+
+  toggleFilter() {
+    let filterVisible = this.state.filterVisible === false  ? true : false
+    let buttonVisible = this.state.filterButtonVisible === true  ? false : true
+    if (!document.body.classList.contains('stop-scroll')) {
+      document.body.className += ' ' + 'stop-scroll'
+    }
+    else {
+      document.body.classList.remove('stop-scroll')
+    }
+    this.setState({ filterVisible: filterVisible, filterButtonVisible: buttonVisible})
   }
 
   render() {
     return (
       <div>
         <div className="site-header" >
-          <Header />
-          <Filter openFilter={this.state.filterVisible ? 'active' : null} toggleFilter={this.toggleFilter} />
+          <Header toggleFilter={this.toggleFilter} />
+          <Filter openFilter={this.state.filterVisible ? 'active' : null}/>
         </div>
         <main className="spellbook-content">
           <div className="content">
