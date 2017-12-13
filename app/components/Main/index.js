@@ -1,27 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import data from '../../data/spellData.json';
 
 import Header from '../Header';
+import Filter from '../Filter';
 import SpellList from '../SpellList';
 
 import '../../assets/styles/reset.scss';
 import '../../assets/styles/base.scss';
 import './main.scss';
 
-class Main extends React.Component {
+class Main extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      spells: data.spells
+    }
+  }
+
   render() {
-    const SortByName = (a, b) => {
-      const aName = a.name.toLowerCase(),
-        bName = b.name.toLowerCase();
-      return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
-    };
-
-    const spells = (data.spells).sort(SortByName)
-
     return (
       <div>
-        <Header isFixed={true} filter={true} />
+        <div className="site-header" >
+          <Header />
+          <Filter openFilter={this.state.filterVisible ? 'active' : null} toggleFilter={this.toggleFilter} />
+        </div>
         <main className="spellbook-content">
           <div className="content">
             <div className="spell-list-sort">
@@ -30,11 +33,11 @@ class Main extends React.Component {
                 <option className="spell-list-sort-level">Sort by Level</option>
               </select>
             </div>
-            <SpellList spells={spells} />
+            <SpellList spells={this.state.spells} />
           </div>
         </main>
       </div>
-    );
+    )
   }
 }
 

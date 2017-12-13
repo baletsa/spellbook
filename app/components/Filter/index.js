@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import data from '../../data/spellData.json';
 
 import FilterButton from '../FilterButton';
 
@@ -7,31 +9,48 @@ import styles from './filter.scss';
 const filterData = [
   {
     'title': 'class', 
-    'options': ['bard', 'cleric', 'druid', 'paladin', 'ranger', 'sorcerer', 'warlock', 'wizard']
-  },{
+    'options': ['bard', 'cleric', 'druid', 'paladin', 'ranger', 'sorcerer', 'warlock', 'wizard'],
+    'type': 'toggle'
+  }, {
     'title': 'level', 
-    'options': ['cantrip', 'level 1', 'level 2', 'level 3', 'level 4', 'level 5', 'level 6', 'level 7', 'level 8', 'level 9']
+    'options': ['cantrip', 'level 1', 'level 2', 'level 3', 'level 4', 'level 5', 'level 6', 'level 7', 'level 8', 'level 9'],
+    'type': 'toggle'
   }, { 
     'title': 'school',
-    'options': ['abjuration', 'conjuration', 'divination', 'enchantment', 'evocation', 'illusion', 'necromancy', 'transmutation']
-  },{
-    'title': 'ritual',
-    'options': ['yes', 'no']
-  },{
-    'title': 'concentration',
-    'options': ['yes', 'no']
-  },{
+    'options': ['abjuration', 'conjuration', 'divination', 'enchantment', 'evocation', 'illusion', 'necromancy', 'transmutation'],
+    'type': 'toggle'
+  }, {
     'title': 'components',
-    'options': ['verbal', 'somatic', 'material']
+    'options': ['verbal', 'somatic', 'material'],
+    'type': 'toggle'
+  }, {
+    'title': 'concentration',
+    'options': ['yes', 'no'],
+    'type': 'radio'
+  }, {
+    'title': 'ritual',
+    'options': ['yes', 'no'],
+    'type': 'radio'
   }
 ]
 
-class Filter extends React.Component {  
+let filterValues = {
+  level: ['Cantrip'],
+  class: ['Druid']
+}
+
+class Filter extends Component {  
   constructor(props) {
     super(props);
-    this.state = {
-      items: this.props.spells
-    }
+    this.filterSpells = this.filterSpells.bind(this)
+  }
+
+  filterSpells(param) {
+    const results = data.spells.filter(x =>
+      Object.keys(filterValues).every(f => 
+      filterValues[f].some( z => z == x[f] )))
+    console.log(results)
+    return results
   }
 
   clearFilter() {
@@ -50,23 +69,26 @@ class Filter extends React.Component {
             </div>
           </div>       
           {
-            filterData.map(filter =>
-              <div key={filter.title} className={`filter__element filter__${filter.title}`}>
-                <h3 className="filter__label">{filter.title}</h3>
-                <div className="filter__options">
-                  {
-                    filter.options.map(button =>
-                      <FilterButton key={button} className={button} buttonName={button} />
-                    )
-                  }
+            filterData.map(filter => {
+              let buttonType = filter.type
+              return (
+                <div key={filter.title} className={`filter__element filter__${filter.title}`}>
+                  <h3 className="filter__label">{filter.title}</h3>
+                  <div className="filter__options">
+                    {
+                      filter.options.map(buttonValue =>
+                        <FilterButton key={buttonValue} filterSpells={this.filterSpells} className={buttonValue} buttonType={buttonType} buttonText={buttonValue} />
+                      )
+                    }
+                  </div>
                 </div>
-              </div>
-            )
+              )
+            })
           }
         </div>
       </section>
     )
   }
-};
+}
 
 export default Filter;

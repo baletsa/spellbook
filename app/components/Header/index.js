@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Link, withRouter } from 'react-router-dom'
 
 import styles from './header.scss';
 
-import Filter from '../Filter';
-
-class Header extends React.Component {
+class Header extends Component { 
   constructor(props) {
       super(props);
       this.state = {
@@ -31,33 +29,27 @@ class Header extends React.Component {
     const { match, location, history } = this.props
 
     let headerLink = null,
-        filterButton = null,
-        filter = null;
+        filterButton = null
 
     if(location.pathname === '/') {
       headerLink = <span className='site-title'>SpellbOOK</span>
       filterButton = <div className="filter-menu"><a className={`filter-menu--trigger ${this.state.filterVisible ? 'active' : null}`} onClick={this.toggleFilter}>Filter</a></div>
-      filter = <Filter openFilter={this.state.filterVisible ? 'active' : null} toggleFilter={this.toggleFilter} />
     } else {
       headerLink = <Link className='back-button' to='/'>Back to spell list</Link>
       filterButton = null
-      filter = null
     }
 
     return (
-      <div className="site-header" >
-        <header>
-          <div className="content">
-            <div className="header-link">
-              {headerLink}
-            </div>
-            {filterButton}
+      <header>
+        <div className="content">
+          <div className="header-link">
+            {headerLink}
           </div>
-        </header>
-        {filter}
-      </div>
+          {filterButton}
+        </div>
+      </header>
     )
   }
-};
+}
 
 export default withRouter(Header);

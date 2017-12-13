@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom'
 
 import './spellItem.scss';
 
-class SpellItem extends React.Component {
+class SpellItem extends Component {
   constructor() {
       super();
       this.state = {
