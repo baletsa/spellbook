@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { observer } from "mobx-react"
 
 import styles from './filterButton.scss';
 
+@observer
 class FilterButton extends Component { 
   constructor(props) {
     super(props);
@@ -13,8 +15,6 @@ class FilterButton extends Component {
   }
 
   handleClick() {
-    this.props.filterSpells()
-
     if (this.state.buttonType === 'radio') {
       console.log('radio')
       this.setState({

@@ -1,34 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { toJS } from "mobx"
+import { observer } from "mobx-react"
 
-import SpellItem from '../SpellItem';
+import SpellItem from '../SpellItem'
 
-import './spellList.scss';
+import './spellList.scss'
 
+@observer
 class SpellList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      spells: this.props.spells
+
+  renderList(list) {
+    if (list.length) {
+      return list.map(spell =>
+        <SpellItem spell={spell} key={spell.name} />
+      )
+    } 
+    else {
+      return (
+        <div className="no-results-message">
+          <div className="results-headline">No Results</div>
+          <div className="results-message"></div>
+        </div>
+      )
     }
   }
 
-  SortByName(a, b) {
-    const aName = a.name.toLowerCase(),
-      bName = b.name.toLowerCase();
-    
-    return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
-  }
-
   render() {
-    const spells = (this.state.spells).sort(this.SortByName)
+    let spells = toJS(this.props.spells)
     
     return (
       <div className="spell-list">
-       {
-          this.state.spells.map(spell =>
-            <SpellItem spell={spell} key={spell.name} />
-          )
-       }
+       {this.renderList(spells)}
       </div>
     )
   }

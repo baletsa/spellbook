@@ -22,10 +22,7 @@ module.exports = {
     rules: [{
         test: /\.js$/,
         exclude: [/libs/, /node_modules/],
-        loader: "babel-loader",
-        options: {
-          presets: ["env"]
-        }
+        loader: "babel-loader"
       },
       {
         test: /\.scss$/,

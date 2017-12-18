@@ -1,10 +1,19 @@
 {
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties"
+  ],
   "presets": [
+    [
+        "env", {
+            "modules": false,
+            "useBuiltIns": true,
+            "targets": {
+                "browsers": ["> 0.5%","last 3 versions"]
+            }
+        }
+    ],
     "react",
-    ["env", {
-      "targets": {
-        "browsers": ["> 0.5%", "last 3 versions"]
-      }
-    }]
+    "stage-0"
   ]
 }

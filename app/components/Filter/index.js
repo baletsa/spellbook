@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { observer } from "mobx-react"
 
 import data from '../../data/spellData.json';
 
@@ -34,25 +35,8 @@ const filterData = [
   }
 ]
 
-let filterValues = {
-  level: ['Cantrip'],
-  class: ['Druid']
-}
-
+@observer
 class Filter extends Component {  
-  constructor(props) {
-    super(props);
-    this.filterSpells = this.filterSpells.bind(this)
-  }
-
-  filterSpells(param) {
-    const results = data.spells.filter(x =>
-      Object.keys(filterValues).every(f => 
-      filterValues[f].some( z => z == x[f] )))
-    console.log(results)
-    return results
-  }
-
   clearFilter() {
     console.log('clear filter')
   }
@@ -77,7 +61,7 @@ class Filter extends Component {
                   <div className="filter__options">
                     {
                       filter.options.map(buttonValue =>
-                        <FilterButton key={buttonValue} filterSpells={this.filterSpells} className={buttonValue} buttonType={buttonType} buttonText={buttonValue} />
+                        <FilterButton key={buttonValue} className={buttonValue} buttonType={buttonType} buttonText={buttonValue} />
                       )
                     }
                   </div>
