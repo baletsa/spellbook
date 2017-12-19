@@ -5,31 +5,19 @@ import styles from './filterButton.scss';
 
 @observer
 class FilterButton extends Component { 
-  constructor(props) {
-    super(props);
-    this.state = {
-      buttonType: this.props.buttonType,
-      toggle: false,
-    }      
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
+  
+  handleClick(key, value) {
     if (this.state.buttonType === 'radio') {
-      console.log('radio')
-      this.setState({
-        toggle: !this.state.toggle
-      })  
+      console.log('radio') 
     } else {
-      this.setState({
-        toggle: !this.state.toggle
-      })
+      console.log('toggle')
     }
   }
 
   render() {
+    let buttonKey = this.props.buttonText.replace(/\s/g, '')
     return (
-      <a className={this.state.buttonType + ` ${this.state.toggle ? 'active' : null}`} onClick={this.handleClick}>{this.props.buttonText}</a>
+      <button className={`filter__button filter__button--${buttonKey}`} onClick={this.handleClick}>{this.props.buttonText}</button>
     )
   }
 }

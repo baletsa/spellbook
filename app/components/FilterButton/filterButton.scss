@@ -2,16 +2,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
   grid-gap: 10px;
-  a {
+}
+
+.filter__button {
     display: block;
     padding: .5em .7em;
     border: 1px solid #eee;
+    border-radius: 0;
     background-color: #fff;
     color: #666;
     line-height: 1;
     transition: box-shadow .3s ease-out;
     text-align: center;
     text-transform: capitalize;
+    cursor: pointer;
     &:hover {
       color: #4d96b9;
       text-decoration: none;
@@ -21,7 +25,6 @@
       margin-right: 0;
     }
   }
-}
 
 .filter__options .active {
   border-color: #2f5f75;

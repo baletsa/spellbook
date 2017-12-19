@@ -4,13 +4,6 @@ import { Route, Link, withRouter } from 'react-router-dom'
 import styles from './header.scss';
 
 class Header extends Component { 
-  constructor(props) {
-      super(props);
-      this.state = {
-        buttonVisible: true, 
-      }
-  }
-
   render() {
     const { match, location, history } = this.props
 
@@ -19,7 +12,7 @@ class Header extends Component {
 
     if(location.pathname === '/') {
       headerLink = <span className='site-title'>SpellbOOK</span>
-      filterButton = <div className="filter-menu"><a className={`filter-menu--trigger ${this.state.buttonVisible ? null : 'active'}`} onClick={this.props.toggleFilter}>Filter</a></div>
+      filterButton = <div className="filter-menu"><a className={`filter-menu--trigger ${this.props.filterButtonVisible ? null : 'hide'}`} onClick={this.props.toggleFilterMenu}>Filter</a></div>
     } else {
       headerLink = <Link className='back-button' to='/'>Back to spell list</Link>
       filterButton = null

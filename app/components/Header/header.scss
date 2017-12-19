@@ -89,11 +89,12 @@ header {
   &:last-child {
     margin-right: 0;
   }
-  &.active {
+  &.hide {
     opacity: 0;
     border-color: #4d96b9;
     color: #4d96b9;
     cursor: default;
+    pointer-events: none;
     &:hover {
       box-shadow: none;
     }
