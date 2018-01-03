@@ -16,8 +16,8 @@ class Main extends Component {
     return (
       <div>
         <div className="site-header" >
-          <Header filterButtonVisible={store.filterButtonVisible} toggleFilterMenu={store.toggleFilterMenu.bind(store)} />
-          <Filter clearFilter={store.clearFilter.bind(store)} toggleFilterMenu={store.toggleFilterMenu.bind(store)} filterMenuVisible={store.filterMenuVisible} />
+          <Header store={store} />
+          <Filter store={store} />
         </div>
         <main className="spellbook-content">
           <div className="content">
@@ -27,7 +27,7 @@ class Main extends Component {
                 <option className="spell-list-sort-level">Sort by Level</option>
               </select>
             </div>
-            <SpellList spells={store.filteredSpells} />
+            <SpellList store={store} />
           </div>
         </main>
       </div>

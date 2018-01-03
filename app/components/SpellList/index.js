@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { toJS } from "mobx"
 import { observer } from "mobx-react"
 
 import SpellItem from '../SpellItem'
@@ -26,7 +25,7 @@ class SpellList extends Component {
   }
 
   render() {
-    let spells = toJS(this.props.spells)
+    let spells = this.props.store.filteredSpells
     
     return (
       <div className="spell-list">

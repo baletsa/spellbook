@@ -19,28 +19,45 @@ class FilterStore {
   @observable filterMenuVisible = false
   
   @observable filters = {
-    "class": [],
-    "level": [],
-    "school": [],
-    "components": [],
-    "concentration": [],
-    "ritual": []
+    'class': [],
+    'level': [],
+    'school': []
   }
   
   @computed get filteredSpells() {
-    let filterNames = [Object.keys(this.filters).forEach((key) => 
-        (this.filters[key] === null || !this.filters[key].length) && delete this.filters[key]), this.filters][1]
-
     let results = this.spells.filter(sp =>
-        Object.keys(this.filters).every(f => 
-        this.filters[f].some( z => z == sp[f] )))
-
+      Object.keys(this.filters).every(key => 
+        this.filters[key].some(f => 
+          RegExp(f).test(sp[key]) 
+        )
+      )
+    )
     return results
+  }
+
+  @observable active = false
+
+  @action
+  toggleFilter(key, value) {
+
+    if(this.filters[key].indexOf(value) !== -1) {
+      this.filters[key].splice(this.filters[key].indexOf(value), 1)
+    } else {
+      this.filters[key].push(value)
+    }
+    
+    console.log(key)
+    console.log(this.filters[key])
+  }
+
+  @action
+  toggleFilterButton() {
+    
   }
 
   @action
   toggleFilterMenu() {
-    console.log('toggle filterMenu')
+    //console.log('toggle filterMenu')
     this.filterButtonVisible = !this.filterButtonVisible
     this.filterMenuVisible = !this.filterMenuVisible
     if (!document.body.classList.contains('stop-scroll')) {
@@ -49,11 +66,7 @@ class FilterStore {
     else {
       document.body.classList.remove('stop-scroll')
     }
-  }
-
-  @action 
-  toggleFilter(key) {
-    console.log('toggle filter')
+    //console.log(this.filterButtonVisible)
   }
 
   @action 
@@ -63,7 +76,7 @@ class FilterStore {
   }
 }
 
-var store = new FilterStore
+var store = window.store = new FilterStore
 
 export default store
 
