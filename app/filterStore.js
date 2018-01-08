@@ -17,6 +17,8 @@ class FilterStore {
 
   @observable filterButtonVisible = true
   @observable filterMenuVisible = false
+
+  @observable toggledButtons = []
   
   @observable filters = {
     'class': [],
@@ -35,8 +37,6 @@ class FilterStore {
     return results
   }
 
-  @observable active = false
-
   @action
   toggleFilter(key, value) {
 
@@ -46,18 +46,27 @@ class FilterStore {
       this.filters[key].push(value)
     }
     
-    console.log(key)
-    console.log(this.filters[key])
+    //console.log(key)
+    //console.log(this.filters[key])
   }
 
   @action
-  toggleFilterButton() {
-    
+  toggleFilterButton(id) {
+    // check to see if id exists in array
+    const index = this.toggledButtons.indexOf(id);
+
+    // if item exists in array, remove it
+    if (index > -1) {
+      return this.toggledButtons.splice(index, 1);
+    }
+
+    // otherwise add it to list
+    this.toggledButtons.push(id);
+    console.log(this.toggledButtons.slice())
   }
 
   @action
   toggleFilterMenu() {
-    //console.log('toggle filterMenu')
     this.filterButtonVisible = !this.filterButtonVisible
     this.filterMenuVisible = !this.filterMenuVisible
     if (!document.body.classList.contains('stop-scroll')) {
@@ -66,7 +75,6 @@ class FilterStore {
     else {
       document.body.classList.remove('stop-scroll')
     }
-    //console.log(this.filterButtonVisible)
   }
 
   @action 
