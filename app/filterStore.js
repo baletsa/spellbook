@@ -83,7 +83,6 @@ class FilterStore {
           return RegExp(el).test(item.class) 
         })
       })
-      console.log(results)
     } 
 
     // filter level
@@ -92,7 +91,6 @@ class FilterStore {
       results = results.filter(function(item) {
         return levels.indexOf(item.level) >= 0
       })
-      console.log(results)
     } 
 
     // filter school
@@ -110,21 +108,22 @@ class FilterStore {
       results = results.filter((item) => {
         return RegExp(regexKey).test(item.components) 
       })
+      console.log(results)
     } 
 
     // filter concentration
     if (this.concentrationFilter.length > 0) {
       var concentration = this.concentrationFilter
-      results = results.filter((item) => {
-        return item === item.components
+      results = results.filter(function(item) {
+        return concentration.indexOf(item.concentration) >= 0
       })
-    }
+    } 
 
     // filter ritual
     if (this.ritualFilter.length > 0) {
       var ritual = this.ritualFilter
       results = results.filter((item) => {
-        return item === item.ritual
+        return ritual.indexOf(item.ritual) >= 0
       })
     }
 
