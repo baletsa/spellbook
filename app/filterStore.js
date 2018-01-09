@@ -71,6 +71,7 @@ class FilterStore {
   @observable concentrationFilter = []
   @observable ritualFilter = []
   
+  // Get Filtered Spells
   @computed get filteredSpells() {
     let results = this.spells
 
@@ -123,15 +124,14 @@ class FilterStore {
     if (this.ritualFilter.length > 0) {
       var ritual = this.ritualFilter
       results = results.filter((item) => {
-        if (item.ritual !== null) {
-          return item === item.ritual
-        }
+        return item === item.ritual
       })
     }
 
     return results
   }
 
+  // Set the Filter Arrays
   @action
   toggleFilter(key, value) {
     switch(key) {
@@ -171,7 +171,24 @@ class FilterStore {
         if(this.componentsFilter.indexOf(value) !== -1) {
           this.componentsFilter.splice(this.componentsFilter.indexOf(value), 1)
         } else {
+          this.componentsFilter = []
           this.componentsFilter.push(value)
+        }
+        break;
+      case 'concentration':
+        if(this.concentrationFilter.indexOf(value) !== -1) {
+          this.concentrationFilter = []
+        } else {
+          this.concentrationFilter = []
+          this.concentrationFilter.push(value)
+        }
+        break;
+      case 'ritual':
+        if(this.ritualFilter.indexOf(value) !== -1) {
+          this.ritualFilter = []
+        } else {
+          this.ritualFilter = []
+          this.ritualFilter.push(value)
         }
         break;
     }
@@ -179,23 +196,51 @@ class FilterStore {
     console.log(this.schoolFilter.slice())
     console.log(this.levelFilter.slice())
     console.log(this.componentsFilter.slice())
+    console.log(this.concentrationFilter.slice())
+    console.log(this.ritualFilter.slice())
   }
 
+  // Toggle Filter Buttons
   @action
-  toggleFilterButton(id) {
-    // check to see if id exists in array
-    const index = this.filterButtons.indexOf(id);
-
-    // if item exists in array, remove it
-    if (index > -1) {
-      return this.filterButtons.splice(index, 1);
+  toggleFilterButton(type, value) {
+    switch(type) {
+      case 'components':
+        if(this.componentButtons.indexOf(value) !== -1) {
+          this.componentButtons = []
+        } else {
+          this.componentButtons = []
+          this.componentButtons.push(value)
+        }
+        break;
+      case 'concentration':
+        if(this.concentrationButtons.indexOf(value) !== -1) {
+          this.concentrationButtons = []
+        } else {
+          this.concentrationButtons = []
+          this.concentrationButtons.push(value)
+        }
+        break;
+      case 'ritual':
+        if(this.ritualButtons.indexOf(value) !== -1) {
+          this.ritualButtons = []
+        } else {
+          this.ritualButtons = []
+          this.ritualButtons.push(value)
+        }
+        break;
+      default:
+        // check to see if id exists in array
+        const index = this.filterButtons.indexOf(id)
+        // if item exists in array, remove it
+        if (index > -1) {
+          return this.filterButtons.splice(index, 1)
+        }
+        // otherwise add it to list
+        this.filterButtons.push(id)
     }
-
-    // otherwise add it to list
-    this.filterButtons.push(id);
-    //console.log(this.filterButtons.slice())
   }
 
+  // Toggle Filter Menu
   @action
   toggleFilterMenu() {
     this.filterButtonVisible = !this.filterButtonVisible
@@ -208,6 +253,7 @@ class FilterStore {
     }
   }
 
+  // Clear Filter Values and Buttons
   @action 
   clearFilter() {
     this.filterButtons = []

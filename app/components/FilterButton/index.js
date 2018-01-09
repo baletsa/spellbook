@@ -7,21 +7,18 @@ import styles from './filterButton.scss';
 @observer
 class FilterButton extends Component { 
   
-  handleClick(e, id) {
+  handleClick(e) {
     e.preventDefault();
     e.stopPropagation();
-    this.props.store.toggleFilterButton(id)
+    this.props.store.toggleFilterButton(e.target.getAttribute('data-key'), e.target.id)
     this.props.store.toggleFilter(e.target.getAttribute('data-key'), e.target.id)
   }
 
   render() {    
-
-    const Id = this.props.buttonText;
-
     let buttonName = this.props.buttonText.replace(/\s/g, '')
 
     return (
-      <button id={this.props.buttonText} data-key={this.props.filterKey} className={`filter__button filter__button--${buttonName} ${this.props.store.filterButtons.indexOf(Id) > -1 ? 'active' : ''}`} onClick={e => this.handleClick(e, Id)}>{this.props.buttonText}</button>
+      <button id={this.props.buttonText} data-key={this.props.filterKey} className={`filter__button filter__button--${buttonName} ${this.props.store.filterButtons.indexOf(this.props.buttonText) > -1 ? 'active' : ''}`} onClick={e => this.handleClick(e)}>{this.props.buttonText}</button>
     )
   }
 }
