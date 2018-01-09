@@ -21,7 +21,7 @@ const filterConfig = [
   }, {
     'category': 'components',
     'options': ['verbal', 'somatic', 'material'],
-    'type': 'toggle'
+    'type': 'radio'
   }, {
     'category': 'concentration',
     'options': ['yes', 'no'],

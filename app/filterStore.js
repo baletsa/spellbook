@@ -59,6 +59,7 @@ class FilterStore {
 
   // Save button states
   @observable filterButtons = []
+  @observable componentButtons = []
   @observable concentrationButtons = []
   @observable ritualButtons = []
   
@@ -104,12 +105,29 @@ class FilterStore {
     // filter components
     if (this.componentsFilter.length > 0) {
       var components = this.componentsFilter
+      var regexKey = new RegExp(components.join("|"), 'gi');
       results = results.filter((item) => {
-        return components.some(function(el){
-          return RegExp(el).test(item.components) 
-        })
+        return RegExp(regexKey).test(item.components) 
       })
     } 
+
+    // filter concentration
+    if (this.concentrationFilter.length > 0) {
+      var concentration = this.concentrationFilter
+      results = results.filter((item) => {
+        return item === item.components
+      })
+    }
+
+    // filter ritual
+    if (this.ritualFilter.length > 0) {
+      var ritual = this.ritualFilter
+      results = results.filter((item) => {
+        if (item.ritual !== null) {
+          return item === item.ritual
+        }
+      })
+    }
 
     return results
   }
@@ -192,8 +210,16 @@ class FilterStore {
 
   @action 
   clearFilter() {
-    this.toggledButtons = []
-    this.filters = {} 
+    this.filterButtons = []
+    this.componentButtons = []
+    this.concentrationButtons = []
+    this.ritualButtons = []
+    this.classFilter = []
+    this.levelFilter = []
+    this.schoolFilter = []
+    this.componentsFilter = []
+    this.concentrationFilter = []
+    this.ritualFilter = []
   }
 }
 
