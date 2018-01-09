@@ -5487,8 +5487,8 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Conjuration",
-    "class": "Cleric, Druid, Paladin, Ranger",
-    "archetype": "Cleric: Nature<br/> Paladin: Ancients",
+    "class": "Druid, Ranger",
+    "archetype": "Cleric: Nature, Paladin: Ancients",
     "domains": "Nature",
     "circles": "Forest",
     "oaths": "Ancients"
