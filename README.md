@@ -1,9 +1,10 @@
 # 5e Spellbook 
 
-Simple application for referencing spells for tabletop gamging.
+Simple application for referencing spells for tabletop gamging using ReactJS and Webpack.
 
 ## Dependencies
 * [NodeJS v.8+](http://nodejs.org/)
+* [ReactJS](https://reactjs.org/)
 
 It is recommended that you use a package manager like _Homebrew_ or _Chocolatey_ to install Node on your machine.
 
@@ -22,7 +23,7 @@ Once the project is installed, several commands can be issued from the root of t
 #### Folder Structure
 
 * __app/__ : _ALL_ work should be done in the _app_ folder. This is where your website's source code lives.
-* __build/__ : When running Gulp, files from _app_ are compiled into _release_. If you work out of the _release_ folder, your work will be overwritten and you will be sad. Don't work out of the _release_ folder.
+* __build/__ : When running the node scripts, files from _app_ are compiled into _build_. If you work out of the _build_ folder, your work will be overwritten and you will be sad. Don't work in the _build_ folder.
 * __node_modules/__ : The folder where node modules are installed when you run `npm install`.
 * __.babelrc__: The configuration file for ES6 presets.
 * __.csscomb.json__: The configuration file that can be used with [CSSComb](https://github.com/csscomb/csscomb.js) or similar, editor specific plugins to automatically sort and format CSS declarations.
