@@ -57,8 +57,12 @@ class FilterStore {
   @observable filterButtonVisible = true
   @observable filterMenuVisible = false
 
-  @observable toggledButtons = []
+  // Save button states
+  @observable filterButtons = []
+  @observable concentrationButtons = []
+  @observable ritualButtons = []
   
+  // Set filters
   @observable classFilter = []
   @observable levelFilter = []
   @observable schoolFilter = []
@@ -68,34 +72,98 @@ class FilterStore {
   
   @computed get filteredSpells() {
     let results = this.spells
+
+    // filter class
+    if (this.classFilter.length > 0) {
+      var classes = this.classFilter
+      results = results.filter((item) => {
+        return classes.some(function(el){
+          return RegExp(el).test(item.class) 
+        })
+      })
+      console.log(results)
+    } 
+
+    // filter level
+    if (this.levelFilter.length > 0) {
+      var levels = this.levelFilter
+      results = results.filter(function(item) {
+        return levels.indexOf(item.level) >= 0
+      })
+      console.log(results)
+    } 
+
+    // filter school
+    if (this.schoolFilter.length > 0) {
+      var schools = this.schoolFilter
+      results = results.filter(function(item) {
+        return schools.indexOf(item.school) >= 0
+      })
+    } 
+
+    // filter components
+    if (this.componentsFilter.length > 0) {
+      var components = this.componentsFilter
+      results = results.filter((item) => {
+        return components.some(function(el){
+          return RegExp(el).test(item.components) 
+        })
+      })
+    } 
+
     return results
   }
 
   @action
   toggleFilter(key, value) {
-    if(this.filters[key].indexOf(value) !== -1) {
-      this.filters[key].splice(this.filters[key].indexOf(value), 1)
-    } else {
-      this.filters[key].push(value)
+    switch(key) {
+      case 'class':
+        if(this.classFilter.indexOf(value) !== -1) {
+          this.classFilter.splice(this.classFilter.indexOf(value), 1)
+        } else {
+          this.classFilter.push(value)
+        }
+        break;
+      case 'level':
+        if(this.levelFilter.indexOf(value) !== -1) {
+          this.levelFilter.splice(this.levelFilter.indexOf(value), 1)
+        } else {
+          this.levelFilter.push(value)
+        }
+        break;
+      case 'school':
+        if(this.schoolFilter.indexOf(value) !== -1) {
+          this.schoolFilter.splice(this.schoolFilter.indexOf(value), 1)
+        } else {
+          this.schoolFilter.push(value)
+        }
+        break;
+      case 'components':
+        if(this.componentsFilter.indexOf(value) !== -1) {
+          this.componentsFilter.splice(this.componentsFilter.indexOf(value), 1)
+        } else {
+          this.componentsFilter.push(value)
+        }
+        break;
     }
-
-    //console.log(key)
-    //console.log(this.filters[key])
+    console.log(this.classFilter.slice())
+    console.log(this.schoolFilter.slice())
+    console.log(this.levelFilter.slice())
   }
 
   @action
   toggleFilterButton(id) {
     // check to see if id exists in array
-    const index = this.toggledButtons.indexOf(id);
+    const index = this.filterButtons.indexOf(id);
 
     // if item exists in array, remove it
     if (index > -1) {
-      return this.toggledButtons.splice(index, 1);
+      return this.filterButtons.splice(index, 1);
     }
 
     // otherwise add it to list
-    this.toggledButtons.push(id);
-    console.log(this.toggledButtons.slice())
+    this.filterButtons.push(id);
+    //console.log(this.filterButtons.slice())
   }
 
   @action

@@ -12,7 +12,6 @@ class FilterButton extends Component {
     e.stopPropagation();
     this.props.store.toggleFilterButton(id)
     this.props.store.toggleFilter(e.target.getAttribute('data-key'), e.target.id)
-    //console.log(this.props.store.toggledButtons)
   }
 
   render() {    
@@ -22,7 +21,7 @@ class FilterButton extends Component {
     let buttonName = this.props.buttonText.replace(/\s/g, '')
 
     return (
-      <button id={this.props.buttonText} data-key={this.props.filterKey} className={`filter__button filter__button--${buttonName} ${this.props.store.toggledButtons.indexOf(Id) > -1 ? 'active' : ''}`} onClick={e => this.handleClick(e, Id)}>{this.props.buttonText}</button>
+      <button id={this.props.buttonText} data-key={this.props.filterKey} className={`filter__button filter__button--${buttonName} ${this.props.store.filterButtons.indexOf(Id) > -1 ? 'active' : ''}`} onClick={e => this.handleClick(e, Id)}>{this.props.buttonText}</button>
     )
   }
 }
