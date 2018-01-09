@@ -230,13 +230,13 @@ class FilterStore {
         break;
       default:
         // check to see if id exists in array
-        const index = this.filterButtons.indexOf(id)
+        const index = this.filterButtons.indexOf(value)
         // if item exists in array, remove it
         if (index > -1) {
           return this.filterButtons.splice(index, 1)
         }
         // otherwise add it to list
-        this.filterButtons.push(id)
+        this.filterButtons.push(value)
     }
   }
 
