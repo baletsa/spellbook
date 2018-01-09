@@ -139,6 +139,17 @@ class FilterStore {
         }
         break;
       case 'components':
+        switch(value) {
+          case 'verbal':
+            value = 'V'
+            break;
+          case 'somatic':
+            value = 'S'
+            break;
+          case 'material':
+            value = 'M'
+            break;
+        }
         if(this.componentsFilter.indexOf(value) !== -1) {
           this.componentsFilter.splice(this.componentsFilter.indexOf(value), 1)
         } else {
@@ -149,6 +160,7 @@ class FilterStore {
     console.log(this.classFilter.slice())
     console.log(this.schoolFilter.slice())
     console.log(this.levelFilter.slice())
+    console.log(this.componentsFilter.slice())
   }
 
   @action
