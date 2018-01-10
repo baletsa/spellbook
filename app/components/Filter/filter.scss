@@ -1,0 +1,136 @@
+.filter select {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: solid 1px #d8dde3;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filter__title-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 970px;
+  margin: auto;
+}
+
+.filter__title-bar {
+  margin-bottom: 1.5em;
+  padding: .5em 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.filter__reset,
+.filter__title,
+.filter__close {
+  flex: 0 0 auto;
+}
+
+.filter__reset,
+.filter__close {
+  display: inline-block;
+}
+
+.filter__reset {
+  margin-left: 1em;
+}
+
+.filter__close {
+  margin-right: 1em;
+}
+
+.filter__title {
+  margin: 0;
+  font-size: .875rem;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.filter {
+  position: absolute;
+  top: 49px;
+  width: 100%;
+  margin: auto;
+  transform: translateY(-150%);
+  transition: transform .35s ease-in;
+  &.active {
+    transform: translateY(0);
+  }
+}
+
+.filter__content {
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  margin: auto;
+  padding: 0 0 1em;
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  background-color: #e2e2e2;
+}
+
+.filter__label {
+  display: block;
+  height: 21px;
+  margin: 0 0 .25em;
+  color: #333;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.advanced__tab {
+  text-align: right;
+}
+
+.filter__element {
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto 1.5em;
+  padding: 0 1em;
+}
+
+.filter__components__toggle {
+  display: flex;
+  align-items: center;
+}
+
+.filter__ritual .filter__options,
+.filter__concentration .filter__options,
+.filter__components .filter__options {
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 166px));
+}
+
+.advanced__tab--button {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  margin-right: 2em;
+  padding: .25em 1em;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 0 0 10px 10px;
+  background-color: #f7f7f7;
+  font-size: .75rem;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.filter__class {
+  margin-bottom: 1em;
+}
+
+// prevent scroll when filter open
+.stop-scroll {
+  overflow: hidden;
+}

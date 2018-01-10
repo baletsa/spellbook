@@ -1,0 +1,26 @@
+.source {
+  margin-top: 3rem;
+  padding: .75rem 0 1rem;
+  border-top: 1px solid #ccc;
+  color: #999;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.pages {
+  margin-right: .5rem;
+  color: #ccc;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.spellbook-content {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+// hack for right now while i reorganize the spelldata
+.higher-level > p:before {
+  content: 'At Higher Levels: ';
+  font-weight: bold;
+}

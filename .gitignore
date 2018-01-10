@@ -2,7 +2,7 @@ node_modules
 .tmp
 .sass-cache
 *.map
-release/*
+build/*
 reports/*
 package-lock.json
 
