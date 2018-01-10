@@ -83,7 +83,7 @@
     "casting_time": "1 minute",
     "level": "1st",
     "school": "Abjuration",
-    "class": "Ranger, Ritual Caster, Wizard"
+    "class": "Ranger, Wizard"
   }, {
     "name": "Alter Self",
     "desc": "<p>You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.</p><p><b>Aquatic Adaptation.</b> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</p><p><b>Change Appearance.</b> You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can’t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.</p><p><b>Natural Weapons.</b> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.</p>",
@@ -111,7 +111,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Druid, Ranger",
+    "class": "Bard, Druid, Ranger",
     "archetype": "Cleric: Nature",
     "domains": "Nature"
   }, {
@@ -128,7 +128,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Enchantment",
-    "class": "Bard, Druid, Ranger, Ritual Caster"
+    "class": "Bard, Druid, Ranger"
   }, {
     "name": "Animal Shapes",
     "desc": "<p>Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating of 4 or lower. On subsequent turns, you can use your action to transform affected creatures into new forms.</p><p>The transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target’s game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak or cast spells.</p><p>The target’s gear melds into the new form. The target can’t activate, wield, or otherwise benefit from any of its equipment.</p>",
@@ -225,7 +225,7 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Divination",
-    "class": "Cleric, Wizard",
+    "class": "Wizard",
     "archetype": "Cleric: Knowledge",
     "domains": "Knowledge"
   }, {
@@ -311,7 +311,7 @@
     "casting_time": "1 minute",
     "level": "2nd",
     "school": "Divination",
-    "class": "Cleric, Ritual Caster",
+    "class": "Cleric",
     "domains": "Knowledge"
   }, {
     "name": "Aura of Life",
@@ -380,7 +380,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Paladin",
+    "class": "Bard, Cleric",
     "archetype": "Paladin: Vengeance",
     "oaths": "Vengeance"
   }, {
@@ -425,7 +425,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Transmutation",
-    "class": "Cleric, Druid, Ranger",
+    "class": "Druid, Ranger",
     "archetype": "Cleric: Nature",
     "domains": "Nature",
     "circles": "Forest"
@@ -441,7 +441,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Abjuration",
-    "class": "Cleric, Paladin",
+    "class": "Cleric",
     "archetype": "Paladin: Devotion",
     "domains": "Life",
     "oaths": "Devotion"
@@ -471,7 +471,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Divination",
-    "class": "Druid, Ranger, Ritual Caster"
+    "class": "Druid, Ranger"
   }, {
     "name": "Bestow Curse",
     "desc": "<p>You touch a creature, and that creature must succeed on a wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:</p><ul><li>Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.</li><li>While cursed, the target has disadvantage on attack rolls against you.</li><li>While cursed, the target must make a wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.</li><li>While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.</li></ul><p>A remove curse spell ends this effect. At the DM’s option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse’s effect.</p>",
@@ -584,7 +584,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Necromancy",
-    "class": "Bard, Cleric, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Cleric, Sorcerer, Wizard",
     "archetype": "Warlock: Fiend",
     "patrons": "Fiend"
   }, {
@@ -599,8 +599,8 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Cleric, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Trickery<br/> Warlock: Archfey",
+    "class": "Sorcerer, Wizard",
+    "archetype": "Cleric: Trickery, Warlock: Archfey",
     "domains": "Trickery",
     "patrons": "Archfey"
   }, {
@@ -615,7 +615,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Illusion",
-    "class": "Druid, Sorcerer, Wizard",
+    "class": "Sorcerer, Wizard",
     "archetype": "Druid: Desert",
     "circles": "Desert"
   }, {
@@ -673,8 +673,8 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Evocation",
-    "class": "Cleric, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Light<br/> Warlock: Fiend",
+    "class": "Sorcerer, Wizard",
+    "archetype": "Cleric: Light, Warlock: Fiend",
     "domains": "Light",
     "patrons": "Fiend"
   }, {
@@ -690,7 +690,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Conjuration",
-    "class": "Cleric, Druid",
+    "class": "Druid",
     "archetype": "Cleric: Tempest",
     "domains": "Tempest",
     "circles": "Forest"
@@ -706,7 +706,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Warlock",
+    "class": "Bard, Cleric",
     "archetype": "Warlock: Archfey",
     "patrons": "Archfey"
   }, {
@@ -751,7 +751,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Druid, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Druid, Sorcerer, Warlock, Wizard",
     "archetype": "Cleric: Trickery",
     "domains": "Trickery"
   }, {
@@ -823,7 +823,7 @@
     "casting_time": "10 minutes",
     "level": "3rd",
     "school": "Divination",
-    "class": "Bard, Cleric, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Cleric, Sorcerer, Wizard",
     "archetype": "Warlock: Great Old One",
     "patrons": "Great Old One"
   }, {
@@ -868,7 +868,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Conjuration",
-    "class": "Druid, Sorcerer, Wizard",
+    "class": "Sorcerer, Wizard",
     "archetype": "Druid: Underdark",
     "circles": "Underdark"
   }, {
@@ -899,7 +899,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Enchantment",
-    "class": "Cleric, Paladin, Warlock",
+    "class": "Cleric, Paladin",
     "archetype": "Warlock: Fiend",
     "domains": "Knowledge",
     "patrons": "Fiend"
@@ -916,7 +916,7 @@
     "casting_time": "1 minute",
     "level": "5th",
     "school": "Divination",
-    "class": "Cleric, Paladin, Ritual Caster",
+    "class": "Cleric",
     "archetype": "Paladin: Devotion",
     "oaths": "Devotion"
   }, {
@@ -931,7 +931,7 @@
     "casting_time": "1 minute",
     "level": "5th",
     "school": "Divination",
-    "class": "Druid, Paladin, Ranger, Ritual Caster",
+    "class": "Druid, Ranger",
     "archetype": "Paladin: Ancients",
     "circles": "Arctic, Forest",
     "oaths": "Ancients"
@@ -961,7 +961,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Divination",
-    "class": "Bard, Ritual Caster, Sorcerer, Warlock, Wizard"
+    "class": "Bard, Sorcerer, Warlock, Wizard"
   }, {
     "name": "Compulsion",
     "desc": "<p>Creatures of your choice that you can see within range and that can hear you must make a wisdom saving throw. A target automatically succeeds on this saving throw if it can’t be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take any action before it moves. After moving in this way, it can make another Wisdom save to try to end the effect.</p><p>A target isn’t compelled to move into an obviously deadly hazard, such as a fire or a pit, but it will provoke opportunity attacks to move in the designated direction.</p>",
@@ -989,7 +989,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Evocation",
-    "class": "Druid, Sorcerer, Wizard",
+    "class": "Sorcerer, Wizard",
     "archetype": "Druid: Arctic",
     "circles": "Arctic"
   }, {
@@ -1006,7 +1006,7 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Druid, Sorcerer, Wizard",
+    "class": "Bard, Druid, Sorcerer, Wizard",
     "archetype": "Cleric: Knowledge",
     "domains": "Knowledge"
   }, {
@@ -1136,7 +1136,7 @@
     "casting_time": "1 minute",
     "level": "5th",
     "school": "Divination",
-    "class": "Ritual Caster, Warlock, Wizard"
+    "class": "Warlock, Wizard"
   }, {
     "name": "Contagion",
     "desc": "<p>Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below.</p><p>At the end of each of the target’s turns, it must make a constitution saving throw. After failing three of these saving throws, the disease’s effects last for the duration, and the creature stops making these saves. After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends.</p><p>Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease’s effects apply to it.</p><p><b>Blinding Sickness.</b> Pain grips the creature’s mind, and its eyes turn milky white. The creature has disadvantage on wisdom checks and wisdom saving throws and is blinded.</p><p><b>Filth Fever.</b> A raging fever sweeps through the creature’s body. The creature has disadvantage on strength checks, strength saving throws, and attack rolls that use Strength.</p><p><b>Flesh Rot.</b> The creature’s flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.</p><p><b>Mindfire.</b> The creature’s mind becomes feverish. The creature has disadvantage on intelligence checks and intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.</p><p><b>Seizure.</b> The creature is overcome with shaking. The creature has disadvantage on dexterity checks, dexterity saving throws, and attack rolls that use Dexterity.</p><p><b>Slimy Doom.</b> The creature begins to bleed uncontrollably. The creature has disadvantage on constitution checks and constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.</p>",
@@ -1288,7 +1288,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Conjuration",
-    "class": "Cleric, Druid, Paladin",
+    "class": "Cleric, Paladin",
     "archetype": "Druid: Desert",
     "circles": "Desert"
   }, {
@@ -1361,7 +1361,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Evocation",
-    "class": "Cleric, Paladin",
+    "class": "Paladin",
     "archetype": "Cleric: War",
     "domains": "War"
   }, {
@@ -1406,7 +1406,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Evocation",
-    "class": "Druid, Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard",
     "archetype": "Druid: Swamp",
     "circles": "Swamp"
   }, {
@@ -1492,7 +1492,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Evocation",
-    "class": "Cleric, Paladin",
+    "class": "Paladin",
     "archetype": "Cleric: Tempest",
     "domains": "Tempest"
   }, {
@@ -1520,7 +1520,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Divination",
-    "class": "Bard, Cleric, Druid, Paladin, Ranger, Ritual Caster, Sorcerer, Wizard"
+    "class": "Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard"
   }, {
     "name": "Detect Poison and Disease",
     "desc": "<p>For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>",
@@ -1534,7 +1534,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Divination",
-    "class": "Cleric, Druid, Paladin, Ranger, Ritual Caster"
+    "class": "Cleric, Druid, Paladin, Ranger"
   }, {
     "name": "Detect Thoughts",
     "desc": "<p>For the duration of the spell, you can read the thoughts of some creatures. While casting the spell and at your action in each round until the spell, you may focus your mind on a creature you can see 30 feet of you. If the chosen creature has an Intelligence of 3 or less, or if she does not speak any language, the creature is not affected.</p><p>You first read the surface thoughts of the creature, which occupies her mind at that moment. In an action, you can direct your attention to the thoughts of another creature or attempt to deepen your reading thoughts of the same creature. If you deepen your reading, the target must make a backup of Wisdom, otherwise you get access to his argument (if any), in his emotional state and thought that concerns his mind on a broader spectrum Such a concern, love or hate. If successful, the spell ends. In all cases, the target is aware that his mind is under your eyes. Unless you are directing your attention to the thoughts of another creature, the target can use his action turn to roll Intelligence opposite your roll Intelligence. If she has the upper hand, the spell ends.</p><p>The questions verbally directed to the target guide the train of thought. This spell is especially effective during an interrogation.</p><p>You can also use this spell to detect the presence of thinking creatures that are invisible to you. When you cast this spell, or in an action for the duration of the spell, you can find thoughts to 30 feet of you. The spell can override most obstacles but it is blocked by 2 feet stone 2 inches of precious metal, or a thin sheet of lead. You can not detect a creature with an Intelligence of 3 or less or speaking any language.</p><p>After detecting the presence of a creature in this way, you can read his thoughts for the rest of the spell's duration as described above, even if you can not see it, but only if it remains in the range of the spell.</p>",
@@ -1548,7 +1548,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Divination",
-    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Sorcerer, Wizard",
     "archetype": "Warlock: Great Old One",
     "patrons": "Great Old One"
   }, {
@@ -1563,8 +1563,8 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Conjuration",
-    "class": "Bard, Cleric, Paladin, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Trickery<br/> Paladin: Vengeance",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "archetype": "Cleric: Trickery, Paladin: Vengeance",
     "domains": "Trickery",
     "oaths": "Vengeance"
   }, {
@@ -1579,7 +1579,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Illusion",
-    "class": "Bard, Cleric, Sorcerer, Wizard",
+    "class": "Bard, Sorcerer, Wizard",
     "archetype": "Cleric: Trickery",
     "domains": "Trickery"
   }, {
@@ -1624,7 +1624,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Abjuration",
-    "class": "Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Druid, Paladin, Sorcerer, Warlock, Wizard",
     "archetype": "Cleric: Trickery",
     "domains": "Trickery",
     "oaths": "Devotion"
@@ -1641,7 +1641,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Enchantment",
-    "class": "Bard, Warlock",
+    "class": "Bard",
     "archetype": "Warlock: Great Old One",
     "patrons": "Great Old One"
   }, {
@@ -1657,8 +1657,8 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Divination",
-    "class": "Cleric, Druid, Ritual Caster",
-    "archetype": "Druid: Forest, Grassland",
+    "class": "Cleric",
+    "archetype": "Druid: Forest, Druid: Grassland",
     "circles": "Forest, Grassland"
   }, {
     "name": "Divine Favor",
@@ -1672,7 +1672,7 @@
     "casting_time": "1 bonus action",
     "level": "1st",
     "school": "Evocation",
-    "class": "Cleric, Paladin",
+    "class": "Paladin",
     "archetype": "Cleric: War",
     "domains": "War"
   }, {
@@ -1701,8 +1701,8 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Enchantment",
-    "class": "Cleric, Druid, Sorcerer, Warlock",
-    "archetype": "Cleric: Nature<br/> Warlock: Archfey, Great Old One",
+    "class": "Druid, Sorcerer",
+    "archetype": "Cleric: Nature, Warlock: Archfey, Warlock: Great Old One",
     "domains": "Nature",
     "patrons": "Archfey, Great Old One"
   }, {
@@ -1718,7 +1718,7 @@
     "casting_time": "1 minute",
     "level": "6th",
     "school": "Conjuration",
-    "class": "Ritual Caster, Wizard"
+    "class": "Wizard"
   }, {
     "name": "Dominate Monster",
     "desc": "<p>You attempt to beguile a creature that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.</p><p>While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability.</p><p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p><p>Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.</p>",
@@ -1746,8 +1746,8 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Trickery<br/> Warlock: Archfey, Great Old One",
+    "class": "Bard, Sorcerer, Wizard",
+    "archetype": "Cleric: Trickery, Warlock: Archfey, Warlock: Great Old One",
     "domains": "Trickery",
     "patrons": "Archfey, Great Old One"
   }, {
@@ -1763,7 +1763,7 @@
     "casting_time": "1 minute",
     "level": "5th",
     "school": "Illusion",
-    "class": "Bard, Druid, Warlock, Wizard",
+    "class": "Bard, Warlock, Wizard",
     "archetype": "Druid: Grassland",
     "circles": "Grassland"
   }, {
@@ -1918,7 +1918,7 @@
     "casting_time": "1 bonus action",
     "level": "1st",
     "school": "Conjuration",
-    "class": "Paladin, Ranger",
+    "class": "Ranger",
     "archetype": "Paladin: Ancients",
     "oaths": "Ancients"
   }, {
@@ -1989,7 +1989,7 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Conjuration",
-    "class": "Warlock, Wizard",
+    "class": "Wizard",
     "archetype": "Warlock: Great Old One",
     "patrons": "Great Old One"
   }, {
@@ -2043,8 +2043,8 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Evocation",
-    "class": "Bard, Cleric, Druid, Warlock",
-    "archetype": "Cleric: Light<br/> Warlock: Archfey",
+    "class": "Bard, Druid",
+    "archetype": "Cleric: Light, Warlock: Archfey",
     "domains": "Light",
     "patrons": "Archfey"
   }, {
@@ -2117,21 +2117,21 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Necromancy",
-    "class": "Bard, Cleric, Druid, Ritual Caster, Wizard"
+    "class": "Bard, Cleric, Druid, Wizard"
   }, {
     "name": "Find Familiar",
-    "desc": "<p>Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can’t attack, but it can take other actions as normal.</p><p>When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.</p><p>While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses.</p><p>As an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you.</p><p>You can’t have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.</p><p>Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your action modifier for the roll.</p>",
+    "desc": "<p>You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.</p><p>Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can’t attack, but it can take other actions as normal.</p><p>When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.</p><p>While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses.</p><p>As an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you.</p><p>You can’t have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.</p><p>Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your action modifier for the roll.</p>",
     "page": "phb 240",
     "range": "10 feet",
     "components": "V, S, M",
-    "material": "10gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier.</p><p>You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.",
+    "material": "10gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier.",
     "ritual": "yes",
     "duration": "Instantaneous",
     "concentration": "no",
     "casting_time": "1 hour",
     "level": "1st",
     "school": "Conjuration",
-    "class": "Ritual Caster, Wizard"
+    "class": "Wizard"
   }, {
     "name": "Find Steed",
     "desc": "<p>You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose, such as a warhorse, a pony, a camel, an elk, or a mastiff. (Your DM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p><p>Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.</p><p>When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.</p><p>While your steed is within 1 mile of you, you can communicate with it telepathically.</p><p>You can’t have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.</p>",
@@ -2199,8 +2199,8 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Evocation",
-    "class": "Cleric, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Light<br/> Warlock: Fiend",
+    "class": "Sorcerer, Wizard",
+    "archetype": "Cleric: Light, Warlock: Fiend",
     "domains": "Light",
     "patrons": "Fiend"
   }, {
@@ -2229,7 +2229,7 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Evocation",
-    "class": "Warlock, Wizard",
+    "class": "Wizard",
     "archetype": "Warlock: Fiend",
     "patrons": "Fiend"
   }, {
@@ -2288,8 +2288,8 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Evocation",
-    "class": "Cleric, Paladin, Warlock",
-    "archetype": "Paladin: Devotion<br/> Warlock: Fiend",
+    "class": "Cleric",
+    "archetype": "Paladin: Devotion, Warlock: Fiend",
     "domains": "Light, War",
     "oaths": "Devotion",
     "patrons": "Fiend"
@@ -2307,7 +2307,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Conjuration",
-    "class": "Cleric, Druid, Wizard",
+    "class": "Druid, Wizard",
     "archetype": "Cleric: Light",
     "domains": "Light"
   }, {
@@ -2352,7 +2352,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Conjuration",
-    "class": "Cleric, Druid, Ranger, Sorcerer, Wizard",
+    "class": "Druid, Ranger, Sorcerer, Wizard",
     "archetype": "Cleric: Tempest",
     "domains": "Tempest"
   }, {
@@ -2368,7 +2368,7 @@
     "casting_time": "10 minutes",
     "level": "6th",
     "school": "Abjuration",
-    "class": "Cleric, Ritual Caster"
+    "class": "Cleric"
   }, {
     "name": "Forcecage",
     "desc": "<p>An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose.</p><p>A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart. </p><p>A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.</p><p>When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area, or those too large to fit inside the area, are pushed away from the center of the area until they are completely outside the area.</p><p>A creature inside the cage can’t leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a charisma saving throw. On a success, the creature can use that magic to exit the cage. On a failure, the creature can't exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.</p><p>This spell can’t be dispelled by dispel magic.</p>",
@@ -2410,7 +2410,7 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Abjuration",
-    "class": "Bard, Cleric, Druid, Paladin, Ranger",
+    "class": "Bard, Cleric, Druid, Ranger",
     "archetype": "Paladin: Devotion",
     "domains": "War",
     "circles": "Arctic, Coast, Forest, Grassland, Swamp",
@@ -2455,7 +2455,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Druid, Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Warlock, Wizard",
     "archetype": "Druid: Underdark",
     "circles": "Underdark"
   }, {
@@ -2499,7 +2499,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Necromancy",
-    "class": "Cleric, Ritual Caster, Wizard"
+    "class": "Cleric, Wizard"
   }, {
     "name": "Giant Insect",
     "desc": "<p>You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider becomes a giant spider, a wasp becomes a giant wasp, and a scorpion becomes a giant scorpion.</p><p>Each creature obeys your verbal commands, and in combat, they act on your turn each round. The DM has the statistics for these creatures and resolves their actions and movement.</p><p>A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it.</p><p>The DM might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.</p>",
@@ -2582,7 +2582,7 @@
     "casting_time": "1 bonus action",
     "level": "4th",
     "school": "Conjuration",
-    "class": "Cleric, Druid, Ranger",
+    "class": "Druid, Ranger",
     "archetype": "Cleric: Nature",
     "domains": "Nature"
   }, {
@@ -2611,8 +2611,8 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Illusion",
-    "class": "Bard, Druid, Sorcerer, Warlock, Wizard",
-    "archetype": "Druid: Underdark<br/> Warlock: Archfey",
+    "class": "Bard, Sorcerer, Wizard",
+    "archetype": "Druid: Underdark, Warlock: Archfey",
     "circles": "Underdark",
     "patrons": "Archfey"
   }, {
@@ -2655,7 +2655,7 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Conjuration",
-    "class": "Cleric, Paladin",
+    "class": "Cleric",
     "archetype": "Paladin: Devotion",
     "domains": "Life, Light",
     "oaths": "Devotion"
@@ -2726,7 +2726,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Evocation",
-    "class": "Cleric, Druid, Sorcerer, Wizard",
+    "class": "Druid, Sorcerer, Wizard",
     "archetype": "Cleric: Tempest",
     "domains": "Tempest"
   }, {
@@ -2756,7 +2756,7 @@
     "casting_time": "24 hours",
     "level": "5th",
     "school": "Evocation",
-    "class": "Cleric, Warlock",
+    "class": "Cleric",
     "archetype": "Warlock: Fiend",
     "patrons": "Fiend"
   }, {
@@ -2800,8 +2800,8 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Druid, Paladin, Sorcerer, Wizard",
-    "archetype": "Druid: Grassland<br/> Paladin: Vengeance",
+    "class": "Sorcerer, Wizard",
+    "archetype": "Druid: Grassland, Paladin: Vengeance",
     "circles": "Grassland",
     "oaths": "Vengeance"
   }, {
@@ -2917,8 +2917,8 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Paladin, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: War<br/> Paladin: Vengeance",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "archetype": "Cleric: War, Paladin: Vengeance",
     "domains": "War",
     "oaths": "Vengeance"
   }, {
@@ -2935,7 +2935,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Cleric, Druid, Sorcerer, Warlock, Wizard",
     "archetype": "Paladin: Vengeance",
     "circles": "Arctic",
     "oaths": "Vengeance"
@@ -2980,7 +2980,7 @@
     "casting_time": "1 bonus action",
     "level": "1st",
     "school": "Divination",
-    "class": "Paladin, Ranger",
+    "class": "Ranger",
     "archetype": "Paladin: Vengeance",
     "oaths": "Vengeance"
   }, {
@@ -3026,8 +3026,8 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Evocation",
-    "class": "Cleric, Druid, Paladin, Sorcerer, Wizard",
-    "archetype": "Cleric: Tempest<br/> Paladin: Ancients",
+    "class": "Druid, Sorcerer, Wizard",
+    "archetype": "Cleric: Tempest, Paladin: Ancients",
     "domains": "Tempest",
     "circles": "Arctic",
     "oaths": "Ancients"
@@ -3044,7 +3044,7 @@
     "casting_time": "1 minute",
     "level": "1st",
     "school": "Divination",
-    "class": "Bard, Cleric, Ritual Caster, Wizard",
+    "class": "Bard, Wizard",
     "archetype": "Cleric: Knowledge",
     "domains": "Knowledge"
   }, {
@@ -3060,7 +3060,7 @@
     "casting_time": "1 minute",
     "level": "1st",
     "school": "Illusion",
-    "class": "Bard, Ritual Caster, Warlock, Wizard"
+    "class": "Bard, Warlock, Wizard"
   }, {
     "name": "Immolation",
     "desc": "<p>Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell's duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can't be extinguished through nonmagical means.</p><p>If damage from this spell reduces a target to 0 hit points, the target is turned to ash.</p>",
@@ -3198,7 +3198,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Illusion",
-    "class": "Bard, Druid, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
     "archetype": "Druid: Grassland",
     "circles": "Grassland"
   }, {
@@ -3272,7 +3272,7 @@
     "casting_time": "1 minute",
     "level": "3rd",
     "school": "Evocation",
-    "class": "Bard, Ritual Caster, Wizard"
+    "class": "Bard, Wizard"
   }, {
     "name": "Lesser Restoration",
     "desc": "<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>",
@@ -3344,7 +3344,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Evocation",
-    "class": "Druid, Sorcerer, Wizard",
+    "class": "Sorcerer, Wizard",
     "archetype": "Druid: Mountain",
     "circles": "Mountain"
   }, {
@@ -3373,7 +3373,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Divination",
-    "class": "Bard, Druid, Ranger, Ritual Caster"
+    "class": "Bard, Druid, Ranger"
   }, {
     "name": "Locate Creature",
     "desc": "<p>Describe or name a creature that is familiar to you. You sense the direction to the creature’s location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.</p><p>The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close—within 30 feet—at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn’t locate the creature.</p><p>This spell can’t locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.</p>",
@@ -3515,7 +3515,7 @@
     "casting_time": "1 minute",
     "level": "2nd",
     "school": "Illusion",
-    "class": "Bard, Ritual Caster, Wizard"
+    "class": "Bard, Wizard"
   }, {
     "name": "Magic Stone",
     "desc": "<p>You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.</p><p>If you cast this spell again, the spell ends early on any pebbles still affected by it.</p>",
@@ -3542,7 +3542,7 @@
     "casting_time": "1 bonus action",
     "level": "2nd",
     "school": "Transmutation",
-    "class": "Cleric, Paladin, Wizard",
+    "class": "Paladin, Wizard",
     "archetype": "Cleric: War",
     "domains": "War"
   }, {
@@ -3656,7 +3656,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Cleric, Druid, Ritual Caster",
+    "class": "Cleric",
     "archetype": "Druid: Mountain",
     "circles": "Mountain"
   }, {
@@ -3673,7 +3673,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Evocation",
-    "class": "Druid, Wizard",
+    "class": "Wizard",
     "archetype": "Druid: Swamp",
     "circles": "Swamp"
   }, {
@@ -3784,8 +3784,8 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Illusion",
-    "class": "Cleric, Druid, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Trickery<br/> Druid: Coast",
+    "class": "Sorcerer, Warlock, Wizard",
+    "archetype": "Cleric: Trickery, Druid: Coast",
     "domains": "Trickery",
     "circles": "Coast"
   }, {
@@ -3813,8 +3813,8 @@
     "casting_time": "1 bonus action",
     "level": "2nd",
     "school": "Conjuration",
-    "class": "Druid, Paladin, Sorcerer, Warlock, Wizard",
-    "archetype": "Druid: Coast<br/> Paladin: Ancients, Vengeance",
+    "class": "Sorcerer, Warlock, Wizard",
+    "archetype": "Druid: Coast, Paladin: Ancients, Paladin: Vengeance",
     "circles": "Coast",
     "oaths": "Ancients, Vengeance"
   }, {
@@ -3830,7 +3830,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Wizard",
+    "class": "Bard, Wizard",
     "archetype": "Cleric: Trickery",
     "domains": "Trickery"
   }, {
@@ -3860,7 +3860,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Evocation",
-    "class": "Druid, Paladin",
+    "class": "Druid",
     "archetype": "Paladin: Ancients",
     "oaths": "Ancients"
   }, {
@@ -3947,7 +3947,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Abjuration",
-    "class": "Bard, Cleric, Ranger, Wizard",
+    "class": "Bard, Ranger, Wizard",
     "archetype": "Cleric: Knowledge",
     "domains": "Knowledge"
   }, {
@@ -4019,7 +4019,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Abjuration",
-    "class": "Cleric, Druid, Ranger",
+    "class": "Druid, Ranger",
     "archetype": "Cleric: Trickery",
     "domains": "Trickery",
     "circles": "Grassland"
@@ -4036,7 +4036,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Transmutation",
-    "class": "Druid, Wizard",
+    "class": "Wizard",
     "archetype": "Druid: Mountain",
     "circles": "Mountain"
   }, {
@@ -4066,8 +4066,8 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Illusion",
-    "class": "Bard, Sorcerer, Warlock, Wizard",
-    "archetype": "Warlock: Archfey, Great Old One",
+    "class": "Bard, Sorcerer, Wizard",
+    "archetype": "Warlock: Archfey, Warlock: Great Old One",
     "patrons": "Archfey, Great Old One"
   }, {
     "name": "Phantasmal Killer",
@@ -4095,7 +4095,7 @@
     "casting_time": "1 minute",
     "level": "3rd",
     "school": "Illusion",
-    "class": "Ritual Caster, Wizard"
+    "class": "Wizard"
   }, {
     "name": "Planar Ally",
     "desc": "<p>You beseech an otherworldly entity for aid. The being must be known to you: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a fiend loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature’s name, you can speak that name when you cast this spell to request that creature, though you might get a different creature anyway (DM’s choice).</p><p>When the creature appears, it is under no compulsion to behave in any particular way. You can ask the creature to perform a service in exchange for payment, but it isn’t obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services.</p><p>Payment can take a variety of forms. A celestial might require a sizable donation of gold or magic items to an allied temple, while a fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you.</p><p>As a rule of thumb, a task that can be measured in minutes requires a payment worth 100 gp per minute. A task measured in hours requires 1,000 gp per hour. And a task measured in days (up to 10 days) requires 10,000 gp per day. The DM can adjust these payments based on the circumstances under which you cast the spell. If the task is aligned with the creature’s ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.</p><p>After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature’s service, the creature immediately returns to its home plane.</p><p>A creature enlisted to join your group counts as a member of it, receiving a full share of experience points awarded.</p>",
@@ -4150,8 +4150,8 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Bard, Cleric, Druid, Paladin, Ranger, Warlock",
-    "archetype": "Cleric: Nature<br/> Paladin: Ancients<br/> Warlock: Archfey",
+    "class": "Bard, Druid, Ranger",
+    "archetype": "Cleric: Nature, Paladin: Ancients, Warlock: Archfey",
     "domains": "Nature",
     "circles": "Forest",
     "oaths": "Ancients",
@@ -4182,7 +4182,7 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Transmutation",
-    "class": "Bard, Cleric, Druid, Sorcerer, Wizard",
+    "class": "Bard, Druid, Sorcerer, Wizard",
     "archetype": "Cleric: Trickery",
     "domains": "Trickery"
   }, {
@@ -4343,8 +4343,8 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Abjuration",
-    "class": "Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard",
-    "archetype": "Paladin: Ancients, Vengeance",
+    "class": "Cleric, Druid, Ranger, Sorcerer, Wizard",
+    "archetype": "Paladin: Ancients, Paladin: Vengeance",
     "circles": "Desert",
     "oaths": "Ancients, Vengeance"
   }, {
@@ -4387,7 +4387,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Transmutation",
-    "class": "Cleric, Druid, Paladin, Ritual Caster"
+    "class": "Cleric, Druid, Paladin"
   }, {
     "name": "Pyrotechnics",
     "desc": "<p>Choose an area of flame that you can see and that can fit within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke.</p><p>Fireworks. The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become blinded until the end of your next turn.</p><p>Smoke. Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it.</p>",
@@ -4429,7 +4429,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Divination",
-    "class": "Ritual Caster, Wizard"
+    "class": "Wizard"
   }, {
     "name": "Ray of Enfeeblement",
     "desc": "<p>A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.</p><p>At the end of each of the target’s turns, it can make a constitution saving throw against the spell. On a success, the spell ends.</p>",
@@ -4608,7 +4608,7 @@
     "casting_time": "1 bonus action",
     "level": "1st",
     "school": "Abjuration",
-    "class": "Cleric, Paladin",
+    "class": "Cleric",
     "archetype": "Paladin: Devotion",
     "oaths": "Devotion"
   }, {
@@ -4624,8 +4624,8 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Evocation",
-    "class": "Cleric, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Light<br/> Warlock: Fiend",
+    "class": "Sorcerer, Wizard",
+    "archetype": "Cleric: Light, Warlock: Fiend",
     "domains": "Light",
     "patrons": "Fiend"
   }, {
@@ -4641,7 +4641,7 @@
     "casting_time": "10 minutes",
     "level": "5th",
     "school": "Divination",
-    "class": "Bard, Cleric, Druid, Paladin, Warlock, Wizard",
+    "class": "Bard, Cleric, Druid, Warlock, Wizard",
     "archetype": "Paladin: Vengeance",
     "domains": "Knowledge, Light",
     "circles": "Coast, Swamp",
@@ -4686,7 +4686,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Illusion",
-    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Sorcerer, Wizard",
     "archetype": "Warlock: Archfey",
     "patrons": "Archfey"
   }, {
@@ -4702,7 +4702,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Evocation",
-    "class": "Bard, Cleric, Warlock, Wizard",
+    "class": "Bard, Cleric, Wizard",
     "archetype": "Warlock: Great Old One",
     "patrons": "Great Old One"
   }, {
@@ -4760,7 +4760,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Evocation",
-    "class": "Bard, Cleric, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
     "archetype": "Cleric: Tempest",
     "domains": "Tempest"
   }, {
@@ -4830,7 +4830,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Illusion",
-    "class": "Bard, Cleric, Druid, Ranger, Ritual Caster",
+    "class": "Bard, Cleric, Ranger",
     "archetype": "Druid: Desert",
     "circles": "Desert"
   }, {
@@ -4873,7 +4873,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Transmutation",
-    "class": "Bard, Druid, Ritual Caster, Wizard"
+    "class": "Bard, Druid, Wizard"
   }, {
     "name": "Sleep",
     "desc": "<p>This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).</p><p>Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.</p><p>Undead and creatures immune to being charmed aren’t affected by this spell.</p>",
@@ -4888,7 +4888,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Enchantment",
-    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Sorcerer, Wizard",
     "archetype": "Warlock: Archfey",
     "patrons": "Archfey"
   }, {
@@ -4904,7 +4904,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Conjuration",
-    "class": "Cleric, Druid, Sorcerer, Wizard",
+    "class": "Druid, Sorcerer, Wizard",
     "archetype": "Cleric: Tempest",
     "domains": "Tempest",
     "circles": "Arctic"
@@ -4921,7 +4921,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Druid, Sorcerer, Wizard",
+    "class": "Sorcerer, Wizard",
     "archetype": "Druid: Arctic",
     "circles": "Arctic"
   }, {
@@ -4964,8 +4964,8 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Divination",
-    "class": "Bard, Cleric, Druid, Paladin, Ranger, Ritual Caster",
-    "archetype": "Cleric: Nature<br/> Paladin: Ancients",
+    "class": "Bard, Druid, Ranger",
+    "archetype": "Cleric: Nature, Paladin: Ancients",
     "domains": "Nature",
     "oaths": "Ancients"
   }, {
@@ -5009,8 +5009,8 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Transmutation",
-    "class": "Druid, Sorcerer, Warlock, Wizard",
-    "archetype": "Druid: Forest, Mountain, Underdark",
+    "class": "Sorcerer, Warlock, Wizard",
+    "archetype": "Druid: Forest, Druid: Mountain, Druid: Underdark",
     "circles": "Forest, Mountain, Underdark"
   }, {
     "name": "Spike Growth",
@@ -5025,7 +5025,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Transmutation",
-    "class": "Cleric, Druid, Ranger",
+    "class": "Druid, Ranger",
     "archetype": "Cleric: Nature",
     "domains": "Nature",
     "circles": "Arctic, Mountain"
@@ -5086,8 +5086,8 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Conjuration",
-    "class": "Bard, Druid, Sorcerer, Warlock, Wizard",
-    "archetype": "Druid: Swamp, Underdark<br/> Warlock: Fiend",
+    "class": "Bard, Sorcerer, Wizard",
+    "archetype": "Druid: Swamp, Druid: Underdark,  Warlock: Fiend",
     "circles": "Swamp, Underdark",
     "patrons": "Fiend"
   }, {
@@ -5118,8 +5118,8 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Abjuration",
-    "class": "Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard",
-    "archetype": "Cleric: War<br/> Paladin: Ancients",
+    "class": "Druid, Ranger, Sorcerer, Wizard",
+    "archetype": "Cleric: War, Paladin: Ancients",
     "domains": "War",
     "circles": "Mountain",
     "oaths": "Ancients"
@@ -5163,7 +5163,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Enchantment",
-    "class": "Bard, Cleric, Sorcerer, Warlock, Wizard",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
     "archetype": "Cleric: Knowledge",
     "domains": "Knowledge"
   }, {
@@ -5248,7 +5248,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Enchantment",
-    "class": "Bard, Warlock, Wizard",
+    "class": "Bard, Wizard",
     "archetype": "Warlock: Great Old One",
     "patrons": "Great Old One"
   }, {
@@ -5263,7 +5263,7 @@
     "casting_time": "1 action",
     "level": "5th",
     "school": "Transmutation",
-    "class": "Sorcerer, Warlock, Wizard",
+    "class": "Sorcerer, Wizard",
     "archetype": "Warlock: Great Old One",
     "patrons": "Great Old One"
   }, {
@@ -5320,7 +5320,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Conjuration",
-    "class": "Ritual Caster, Wizard"
+    "class": "Wizard"
   }, {
     "name": "Thaumaturgy",
     "desc": "<p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range.</p><ul><li>Your voice booms up to three times as loud as normal for 1 minute.</li><li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li><li>You cause harmless tremors in the ground for 1 minute.</li><li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li><li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li><li>You alter the appearance of your eyes for 1 minute.</li></ul><p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>",
@@ -5387,7 +5387,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Evocation",
-    "class": "Bard, Cleric, Druid, Sorcerer, Wizard",
+    "class": "Bard, Druid, Sorcerer, Wizard",
     "archetype": "Cleric: Tempest",
     "domains": "Tempest"
   }, {
@@ -5573,7 +5573,7 @@
     "casting_time": "1 action",
     "level": "1st",
     "school": "Conjuration",
-    "class": "Bard, Ritual Caster, Warlock, Wizard"
+    "class": "Bard, Warlock, Wizard"
   }, {
     "name": "Vampiric Touch",
     "desc": "<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.</p>",
@@ -5630,8 +5630,8 @@
     "casting_time": "1 action",
     "level": "4th",
     "school": "Evocation",
-    "class": "Cleric, Druid, Sorcerer, Warlock, Wizard",
-    "archetype": "Cleric: Light<br/> Warlock: Fiend",
+    "class": "Druid, Sorcerer, Wizard",
+    "archetype": "Cleric: Light, Warlock: Fiend",
     "domains": "Light",
     "patrons": "Fiend"
   }, {
@@ -5761,7 +5761,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Druid, Ranger, Ritual Caster, Sorcerer, Wizard",
+    "class": "Druid, Ranger, Sorcerer, Wizard",
     "circles": "Coast"
   }, {
     "name": "Water Walk",
@@ -5775,7 +5775,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Transmutation",
-    "class": "Cleric, Druid, Ranger, Ritual Caster, Sorcerer",
+    "class": "Cleric, Druid, Ranger, Sorcerer",
     "circles": "Coast, Swamp"
   }, {
     "name": "Watery Sphere",
@@ -5804,7 +5804,7 @@
     "casting_time": "1 action",
     "level": "2nd",
     "school": "Conjuration",
-    "class": "Druid, Sorcerer, Wizard",
+    "class": "Sorcerer, Wizard",
     "archetype": "Druid: Underdark",
     "circles": "Underdark"
   }, {
@@ -5863,7 +5863,7 @@
     "casting_time": "1 action",
     "level": "3rd",
     "school": "Evocation",
-    "class": "Cleric, Druid, Ranger",
+    "class": "Druid, Ranger",
     "archetype": "Cleric: Nature",
     "domains": "Nature"
   }, {
