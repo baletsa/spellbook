@@ -46,6 +46,12 @@ const DetailView = ({ match }) => {
               <div className='spell_detail-content' dangerouslySetInnerHTML={{__html: spell.desc}} />
               {spell.higher_level ? <div className='spell_detail-higher_level' dangerouslySetInnerHTML={{__html: '<b>At Higher Levels: </b> ' + spell.higher_level}} /> : null}
             </div>
+            <footer>
+              <div className="spell_detail-source">
+                <span className="class-tags"><strong>Available to:</strong>{spell.class}</span>
+                <span className="pages">{`— ${spell.page}`}</span>
+              </div>
+            </footer>
           </article>
         </div>
     )
