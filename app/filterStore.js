@@ -191,12 +191,12 @@ class FilterStore {
         }
         break;
     }
-    console.log(this.classFilter.slice())
-    console.log(this.schoolFilter.slice())
-    console.log(this.levelFilter.slice())
-    console.log(this.componentsFilter.slice())
-    console.log(this.concentrationFilter.slice())
-    console.log(this.ritualFilter.slice())
+    //console.log(this.classFilter.slice())
+    //console.log(this.schoolFilter.slice())
+    //console.log(this.levelFilter.slice())
+    //console.log(this.componentsFilter.slice())
+    //console.log(this.concentrationFilter.slice())
+    //console.log(this.ritualFilter.slice())
   }
 
   // Toggle Filter Buttons
@@ -268,12 +268,6 @@ class FilterStore {
   }
 }
 
-var store = window.store = new FilterStore
+var store = new FilterStore
 
 export default store
-
-autorun(() => {
-  //console.log(store.filteredSpells)
-  //console.log(store.spells)
-  //console.log(store.filters)
-})
