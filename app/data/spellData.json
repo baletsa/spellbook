@@ -6004,19 +6004,6 @@
       "school": "Transmutation",
       "class": "Druid"
     }, {
-      "name": "Puppet",
-      "desc": "<p>Your gestures force one humanoid you can see within range to make a Charisma saving throw. On a failed save, the target must move up to its speed in a direction you choose. In addition, you can cause the target to drop whatever it is holding. This spell has no effect on a humanoid that is immune to being charmed.</p>",
-      "page": "UA: Starter Spells",
-      "range": "120 feet",
-      "components": "S",
-      "ritual": "no",
-      "duration": "Instantaneous",
-      "concentration": "no",
-      "casting_time": "1 action",
-      "level": "1st",
-      "school": "Enchantment",
-      "class": "Bard, Warlock, Wizard"
-    }, {
       "name": "Sense Emotion",
       "desc": "<p>You attune your senses to pick up the emotions of others for the duration. As a bonus action you can focus your senses on one humanoid you can see within 30 feet of you. You instantly learn the target’s prevailing emotion, whether it’s love, anger, pain, fear, calm, or something else. If the target isn’t humanoid or it is immune to being charmed, you sense that it is calm.</p>",
       "page": "UA: Starter Spells",
@@ -6043,19 +6030,6 @@
       "level": "1st",
       "school": "Abjuration",
       "class": "Druid, Ranger, Wizard"
-    }, {
-      "name": "Sudden Awakening",
-      "desc": "<p>Each sleeping creature you choose within range awakens, and then each prone creature within range can stand up without expending any movement.</p>",
-      "page": "UA: Starter Spells",
-      "range": "Self",
-      "components": "V",
-      "ritual": "no",
-      "duration": "Instantaneous",
-      "concentration": "no",
-      "casting_time": "1 bonus action",
-      "level": "1st",
-      "school": "Enchantment",
-      "class": "Druid, Ranger, Sorcerer, Wizard"
     }, {
       "name": "Toll the Dead",
       "desc": "<p>You point at one creature you can see within range while envisioning its demise. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.</p><p>The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>",
