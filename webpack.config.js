@@ -13,10 +13,13 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'app'),
-    historyApiFallback: true
+    historyApiFallback: {
+      index: '/spellbook',
+    }
   },
   output: {
     path: path.resolve(__dirname, './build'),
+    publicPath: '/spellbook/',
     filename: '[name].js'
   },
   module: {
@@ -33,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loader: "file-loader", 
+        loader: "file-loader"
       }
     ],
   },
@@ -41,6 +44,7 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './app/index.html',
       inject: 'body',
@@ -54,6 +58,26 @@ module.exports = {
       }
     }),
     new ExtractTextPlugin('[name].css'),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+          screw_ie8: true,
+          drop_console: true,
+          // do not show warnings in the console (there is a lot of them)
+          warnings: false,
+          unused: true,
+          dead_code: true
+      },
+      mangle: {
+          screw_ie8: true
+      },
+      output: {
+          comments: false,
+          ascii_only: true,
+          screw_ie8: true
+      },
+      comments: false,
+      sourceMap: false
+    })
   ],
   devtool: 'source-map'
 };
